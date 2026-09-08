@@ -1,0 +1,26 @@
+{
+  "visual_qa": "pass",
+  "reviewer": "standard_preflight",
+  "scope": "all nine standard animation rows",
+  "method": "All normal-size temporal frames and wrap-to-first inspected; not live app playback",
+  "errors": [],
+  "accepted_warnings": [
+    {
+      "state": "running-left",
+      "severity": "minor",
+      "reason": "Frames 4-7 repeat a short cycle; alternate support is visible and closure is smooth, with smaller opposite-leg extension."
+    },
+    {
+      "state": "jumping",
+      "severity": "minor",
+      "reason": "Roughly 9-12 percent smaller overall than idle, mostly reads as crouch/short-leg hop; no conspicuous within-cycle scale pop."
+    },
+    {
+      "state": "all",
+      "severity": "minor",
+      "reason": "stable-slots extraction warnings reviewed visually; bodies, feet and scrolls remain coherent."
+    }
+  ],
+  "direction_scope": false,
+  "repair_rows": []
+}

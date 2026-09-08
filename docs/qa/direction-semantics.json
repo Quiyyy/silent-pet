@@ -1,0 +1,139 @@
+{
+  "reviewer": "final_visual_qa",
+  "directions": {
+    "135": {
+      "verdict": "pass",
+      "expected": "down-right",
+      "observed": "头脸仍朝屏幕右侧，低头和下视明显",
+      "horizontal": "鼻尖与主要脸面保持在头部中线右侧",
+      "vertical": "眼睑和瞳孔下移、头骨帽遮挡增多，明确朝下",
+      "reason": "右下两个轴可读，盲测对应右向与下向均正确"
+    },
+    "180": {
+      "verdict": "pass",
+      "expected": "down",
+      "observed": "头部正中低垂，视线明确向下",
+      "horizontal": "头骨、鼻梁和脸面基本左右对称，无左右偏向",
+      "vertical": "下巴内收、眼线低垂且头骨遮挡上脸，明确朝下",
+      "reason": "正下基准明确，盲测hard gate通过"
+    },
+    "225": {
+      "verdict": "warning",
+      "expected": "down-left",
+      "observed": "低头姿态明确，头脸已进入左转过渡，但眼部水平提示仍弱且盲测读作右",
+      "horizontal": "头部外轮廓开始向270的屏幕左侧轮廓过渡，鼻尖/瞳孔横向偏移不足",
+      "vertical": "瞳孔与眼睑向下、下巴内收，明确朝下",
+      "reason": "保留minor warning：正常尺寸有序循环中位于202.5与247.5之间，身体和脸面没有回摆到右象限，也无大跳变"
+    },
+    "270": {
+      "verdict": "pass",
+      "expected": "left",
+      "observed": "头脸与鼻尖明确指向屏幕左侧",
+      "horizontal": "鼻尖和瞳孔明显位于头部中心左侧，侧向脸面清楚",
+      "vertical": "眼线接近水平，无明显上下偏向",
+      "reason": "正左基准明确，盲测hard gate通过"
+    },
+    "315": {
+      "verdict": "pass",
+      "expected": "up-left",
+      "observed": "脸面朝屏幕左侧，上仰和上视更加明显",
+      "horizontal": "鼻尖与瞳孔位于中线左侧",
+      "vertical": "眼线处于上部、下巴明显抬起",
+      "reason": "左上两个轴明确，盲测对应轴均正确"
+    },
+    "000": {
+      "verdict": "pass",
+      "expected": "up",
+      "observed": "头部正中上仰，双眼朝上，面部在头骨下方对称展开",
+      "horizontal": "鼻梁与双眼保持头部中线两侧对称，无左右偏向",
+      "vertical": "瞳孔贴近上眼睑且下巴抬起，明确朝上",
+      "reason": "正上基准明确；到022.5只有轻微向右过渡，无反转"
+    },
+    "022.5": {
+      "verdict": "pass",
+      "expected": "up-right",
+      "observed": "保持上仰，同时脸面和视线开始向屏幕右侧偏移",
+      "horizontal": "瞳孔与鼻尖相对头部中线轻微右移",
+      "vertical": "瞳孔仍位于眼裂上部、下巴保持抬起",
+      "reason": "右向提示虽小但在000→045有序过渡中清楚位于右上象限"
+    },
+    "045": {
+      "verdict": "pass",
+      "expected": "up-right",
+      "observed": "头脸转向屏幕右侧并保持明显上视",
+      "horizontal": "鼻尖、瞳孔和可见脸面整体位于头部中线右侧",
+      "vertical": "眼线向上、下巴抬起",
+      "reason": "两个轴均明确，和相邻方向连续"
+    },
+    "067.5": {
+      "verdict": "pass",
+      "expected": "up-right",
+      "observed": "接近右向基准，仍保留上视姿态",
+      "horizontal": "鼻尖与脸面朝屏幕右侧，右向轮廓接近090",
+      "vertical": "瞳孔仍高于中位，头部略上扬",
+      "reason": "从045到090平滑推进，无错象限"
+    },
+    "090": {
+      "verdict": "pass",
+      "expected": "right",
+      "observed": "头脸、鼻尖与视线明确指向屏幕右侧",
+      "horizontal": "鼻尖和瞳孔明显落在头部中心右侧，右侧脸面朝向清楚",
+      "vertical": "眼线接近水平，无明显上下偏向",
+      "reason": "正右基准明确，盲测hard gate通过"
+    },
+    "112.5": {
+      "verdict": "pass",
+      "expected": "down-right",
+      "observed": "保持右转，同时眼线和头部开始下压",
+      "horizontal": "鼻尖、瞳孔及可见脸面仍在头部中心右侧",
+      "vertical": "瞳孔降低、下巴内收，开始朝下",
+      "reason": "由090向135连续进入右下象限"
+    },
+    "157.5": {
+      "verdict": "warning",
+      "expected": "down-right",
+      "observed": "姿态明确接近正下，右向水平提示很弱；盲测多数读作左，但正常尺寸有序循环仍是135到180的连续收中过程",
+      "horizontal": "鼻尖接近中线，脸面从135的右转逐步收回；单帧水平轴易误读",
+      "vertical": "下巴深收、视线明显向下，垂直轴明确",
+      "reason": "保留minor warning：无明显错象限跳变或循环反转，157.5→180身体、卷轴与基线连续"
+    },
+    "202.5": {
+      "verdict": "warning",
+      "expected": "down-left",
+      "observed": "仍以正下姿态为主并开始向屏幕左侧展开；盲测多数读作右，单帧水平提示偏弱",
+      "horizontal": "脸面处于180向225/247.5左转的早期过渡，鼻尖接近中线，左向幅度较小",
+      "vertical": "低头、低眼线和下巴内收保持明确朝下",
+      "reason": "保留minor warning：180→202.5→225→247.5的头脸轮廓连续向左推进，无可见反转或突跳"
+    },
+    "247.5": {
+      "verdict": "pass",
+      "expected": "down-left",
+      "observed": "头脸明确朝屏幕左侧，同时保留下视",
+      "horizontal": "鼻尖、瞳孔和可见脸面移到头部中线左侧并接近270轮廓",
+      "vertical": "眼线仍低、头部略俯",
+      "reason": "左下两个轴清楚，和225、270连续"
+    },
+    "292.5": {
+      "verdict": "pass",
+      "expected": "up-left",
+      "observed": "保持左转并开始抬头上视",
+      "horizontal": "鼻尖、瞳孔与可见脸面仍在头部中线左侧",
+      "vertical": "瞳孔升高、下巴抬起",
+      "reason": "从270向315平滑进入左上象限"
+    },
+    "337.5": {
+      "verdict": "pass",
+      "expected": "up-left",
+      "observed": "接近正上但仍保留轻微左向，头部明显上仰",
+      "horizontal": "鼻尖和瞳孔相对中线略偏左",
+      "vertical": "瞳孔高位、下巴抬起，明确朝上",
+      "reason": "337.5→000自然收回正中，无反转、注册跳变或比例突变"
+    }
+  },
+  "review_warnings": [
+    "157.5、202.5、225接近正下方时水平提示较弱，盲测出现反向读法；结合正常尺寸有序循环、头脸轮廓和连续性，判为可接受的minor warning。",
+    "look-continuity报告的透明孔洞位于头角/头骨之间，以及双腿、靴子与披风尾部之间的开放背景；高对比逐帧检查未见穿过脸、躯干、卷轴或衣物的真实内部裂缝。",
+    "000→022.5像素差为局部统计离群，但正常尺寸循环只见轻微头脸过渡，无可见snap、scale pop或身份变化。",
+    "九个标准动作均使用stable-slots；逐帧确认身体、脚、披风和卷轴稳定且未裁切。running-left后半段为较短步态循环、jumping整体略小，均无明显闭环跳变。"
+  ]
+}

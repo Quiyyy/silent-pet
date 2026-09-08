@@ -1,0 +1,75 @@
+{
+  "generator": "built-in image_gen",
+  "identity_reference": "source/reference.png",
+  "cardinal_anchors": "source/look-anchors.png",
+  "rows": [
+    {
+      "state": "failed",
+      "source": "source/rows/failed.png",
+      "prompt": "prompts/rows/failed.md",
+      "layout_guide": "source/layout-guides/failed.png"
+    },
+    {
+      "state": "idle",
+      "source": "source/rows/idle.png",
+      "prompt": "prompts/rows/idle.md",
+      "layout_guide": "source/layout-guides/idle.png"
+    },
+    {
+      "state": "jumping",
+      "source": "source/rows/jumping.png",
+      "prompt": "prompts/rows/jumping.md",
+      "layout_guide": "source/layout-guides/jumping.png"
+    },
+    {
+      "state": "look-row-10",
+      "source": "source/rows/look-row-10.png",
+      "prompt": "prompts/rows/look-row-10.md",
+      "layout_guide": "source/layout-guides/look-row-10.png"
+    },
+    {
+      "state": "look-row-9",
+      "source": "source/rows/look-row-9.png",
+      "prompt": "prompts/rows/look-row-9.md",
+      "layout_guide": "source/layout-guides/look-row-9.png"
+    },
+    {
+      "state": "review",
+      "source": "source/rows/review.png",
+      "prompt": "prompts/rows/review.md",
+      "layout_guide": "source/layout-guides/review.png"
+    },
+    {
+      "state": "running-left",
+      "source": "source/rows/running-left.png",
+      "prompt": "prompts/rows/running-left.md",
+      "layout_guide": "source/layout-guides/running-left.png"
+    },
+    {
+      "state": "running-right",
+      "source": "source/rows/running-right.png",
+      "prompt": "prompts/rows/running-right.md",
+      "layout_guide": "source/layout-guides/running-right.png"
+    },
+    {
+      "state": "running",
+      "source": "source/rows/running.png",
+      "prompt": "prompts/rows/running.md",
+      "layout_guide": "source/layout-guides/running.png"
+    },
+    {
+      "state": "waiting",
+      "source": "source/rows/waiting.png",
+      "prompt": "prompts/rows/waiting.md",
+      "layout_guide": "source/layout-guides/waiting.png"
+    },
+    {
+      "state": "waving",
+      "source": "source/rows/waving.png",
+      "prompt": "prompts/rows/waving.md",
+      "layout_guide": "source/layout-guides/waving.png"
+    }
+  ],
+  "final": "spritesheet.webp",
+  "final_constraints": "docs/production.md"
+}

@@ -1,0 +1,13 @@
+{
+  "decision": "accept",
+  "severity": "minor",
+  "reviewed_by": "parent",
+  "independent_evidence": "docs/qa/final-visual-qa.json and docs/qa/direction-semantics.json",
+  "checks": [
+    "horizontal-6 B:225",
+    "horizontal-7 A:157.5",
+    "horizontal-7 B:202.5"
+  ],
+  "evidence": "Independent final reviewer inspected all normal-size ordered GIF frames and both row boundaries: near-down horizontal cues are weak but the head outline progresses continuously without visible quadrant reversal or snap; all cardinal hard gates pass. Transparent hole candidates are exterior horn/leg/cloak gaps, not internal seams.",
+  "overrides_major_failure": false
+}

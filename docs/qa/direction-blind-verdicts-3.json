@@ -1,0 +1,88 @@
+{
+  "pairs": [
+    {
+      "pair": "horizontal-1",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A鼻尖和脸转向画面左侧；B鼻尖、眼睛朝画面右侧。"
+    },
+    {
+      "pair": "horizontal-2",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A头脸明显左转，瞳孔偏左；B脸转向右侧，瞳孔偏右。"
+    },
+    {
+      "pair": "horizontal-3",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A鼻尖及眼睑朝左；B鼻尖与脸部朝右。"
+    },
+    {
+      "pair": "horizontal-4",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A脸部和鼻尖偏左；B脸部明显偏右。"
+    },
+    {
+      "pair": "horizontal-5",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A瞳孔、鼻尖和脸转角指向左；B对应地标指向右。"
+    },
+    {
+      "pair": "horizontal-6",
+      "A": "screen-right",
+      "B": "screen-right",
+      "reason": "两者鼻尖和瞳孔都偏向画面右侧，虽俯视角度不同。"
+    },
+    {
+      "pair": "horizontal-7",
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A眼睛与脸转角偏左；B鼻尖和瞳孔偏右。"
+    },
+    {
+      "pair": "vertical-1",
+      "A": "up",
+      "B": "down",
+      "reason": "A下巴抬起、瞳孔位于眼睛上方；B头部俯下且瞳孔偏下。"
+    },
+    {
+      "pair": "vertical-2",
+      "A": "down",
+      "B": "up",
+      "reason": "A眼睑下压、瞳孔偏下；B脸和瞳孔明显抬向上方。"
+    },
+    {
+      "pair": "vertical-3",
+      "A": "up",
+      "B": "down",
+      "reason": "A下巴抬起、眼睛朝上；B头部下俯、瞳孔朝下。"
+    },
+    {
+      "pair": "vertical-4",
+      "A": "up",
+      "B": "down",
+      "reason": "A脸部仰起且瞳孔偏上；B眼睑和瞳孔均向下。"
+    },
+    {
+      "pair": "vertical-5",
+      "A": "down",
+      "B": "up",
+      "reason": "A明显低头、瞳孔下移；B下巴抬起、瞳孔上移。"
+    },
+    {
+      "pair": "vertical-6",
+      "A": "down",
+      "B": "up",
+      "reason": "A眼睛和鼻尖向下；B脸部仰起、瞳孔位于上侧。"
+    },
+    {
+      "pair": "vertical-7",
+      "A": "down",
+      "B": "up",
+      "reason": "A头部俯视且瞳孔偏下；B下巴抬起、瞳孔偏上。"
+    }
+  ]
+}

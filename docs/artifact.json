@@ -1,0 +1,12 @@
+{
+  "sha256": "6c10112566afdf692201ab090d16f6fcdd0c0ae0defc0a667136976ac2d26581",
+  "spriteVersionNumber": 2,
+  "width": 1536,
+  "height": 2288,
+  "generation": "built-in image_gen",
+  "directions": 16,
+  "standard_animations": 9,
+  "validation": "docs/qa/installed-validation.json",
+  "visual_qa": "docs/qa/final-visual-qa.json",
+  "blind_qa": "docs/qa/direction-blind-validation.json"
+}
