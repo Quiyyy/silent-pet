@@ -37,4 +37,4 @@
 
 ## 官方反馈
 
-官方已有同主题建议 [openai/codex #21657](https://github.com/openai/codex/issues/21657)，另有物理鼠标视线反馈 [#33224](https://github.com/openai/codex/issues/33224)。本轮将在已有建议下补充原型、事件优先级与可验收的边界条件。
+官方已有同主题建议 [openai/codex #21657](https://github.com/openai/codex/issues/21657)，另有物理鼠标视线反馈 [#33224](https://github.com/openai/codex/issues/33224)。本轮已在已有建议下[提交补充意见](https://github.com/openai/codex/issues/21657#issuecomment-5742294739)，包含原型、事件优先级与可验收的边界条件。未重复新建同主题 issue。

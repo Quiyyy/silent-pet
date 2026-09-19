@@ -1,0 +1,8 @@
+{
+  "repository": "openai/codex",
+  "issue": 21657,
+  "action": "comment_on_existing_feature_request",
+  "url": "https://github.com/openai/codex/issues/21657#issuecomment-5742294739",
+  "related_issue": 33224,
+  "prototype_commit": "c6f202f10860488b22915c2d97c82df6979c0148"
+}
