@@ -1,6 +1,6 @@
 {
   "ok": true,
-  "file": "run\\final\\spritesheet-extended.webp",
+  "file": "run\\final\\spritesheet-hover.webp",
   "format": "WEBP",
   "mode": "RGBA",
   "columns": 8,
@@ -305,7 +305,7 @@
       "row": 4,
       "column": 0,
       "used": true,
-      "nontransparent_pixels": 20791,
+      "nontransparent_pixels": 21449,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -314,7 +314,7 @@
       "row": 4,
       "column": 1,
       "used": true,
-      "nontransparent_pixels": 20493,
+      "nontransparent_pixels": 20994,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -323,7 +323,7 @@
       "row": 4,
       "column": 2,
       "used": true,
-      "nontransparent_pixels": 20489,
+      "nontransparent_pixels": 21110,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -332,7 +332,7 @@
       "row": 4,
       "column": 3,
       "used": true,
-      "nontransparent_pixels": 20912,
+      "nontransparent_pixels": 21099,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },
@@ -341,7 +341,7 @@
       "row": 4,
       "column": 4,
       "used": true,
-      "nontransparent_pixels": 20695,
+      "nontransparent_pixels": 20838,
       "opaque_chroma_key_pixels": 0,
       "chroma_fringe_pixels": 0
     },

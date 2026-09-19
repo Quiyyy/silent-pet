@@ -1,0 +1,16 @@
+{
+  "revision": "2026-09-19-calm-affection",
+  "node_tests": {
+    "passed": 17,
+    "failed": 0
+  },
+  "syntax_check": "pass",
+  "preview_reaction_ms": 2400,
+  "native_reaction_ms": 840,
+  "native_timing_modified": false,
+  "browser_input_acceptance": "blocked: Windows sandbox helper initialization failed",
+  "native_runtime_reloaded": "not_verified",
+  "gait_repair": "not_completed; waiting for user choice",
+  "http_atlas_status": 200,
+  "served_atlas_matches_installed": true
+}

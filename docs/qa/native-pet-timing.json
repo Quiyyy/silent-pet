@@ -1,0 +1,23 @@
+{
+  "source": "Local static inspection of installed Windows package 26.915.4065.0",
+  "native_jump_durations_ms": [
+    140,
+    140,
+    140,
+    140,
+    280
+  ],
+  "native_jump_total_ms": 840,
+  "native_drag_durations_ms": [
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    220
+  ],
+  "native_drag_total_ms": 1060,
+  "runtime_modified": false
+}

@@ -1,13 +1,26 @@
-import { STATES, duration, frameAt, pointerDirection } from './model.mjs';
+import { STATES, frameAt, pointerDirection } from './model.mjs';
+
+const reactionDurationsMs = Object.freeze([400, 500, 650, 500, 350]);
 
 export const INTERACTION = Object.freeze({
   enterRadius: 180,
   exitRadius: 210,
-  hoverDwellMs: 350,
-  cooldownMs: 2400,
+  hoverDwellMs: 500,
+  cooldownMs: 4000,
+  reactionDurationsMs,
+  reactionDurationMs: reactionDurationsMs.reduce((sum, duration) => sum + duration, 0),
   dragThreshold: 8,
   directionHysteresisDegrees: 3
 });
+
+function reactionFrameAt(elapsed) {
+  let phase = Math.max(0, elapsed);
+  for (let i = 0; i < reactionDurationsMs.length; i++) {
+    if (phase < reactionDurationsMs[i]) return i;
+    phase -= reactionDurationsMs[i];
+  }
+  return reactionDurationsMs.length - 1;
+}
 
 export function clampOffset(offset, stage, pet, padding = 12) {
   const x = Math.max(0, (stage.width - pet.width) / 2 - padding);
@@ -114,7 +127,7 @@ export class PetInteraction {
     this.gaze = null;
   }
   settle(now) {
-    if (this.reactionAt !== null && now - this.reactionAt >= duration('jumping')) this.reactionAt = null;
+    if (this.reactionAt !== null && now - this.reactionAt >= INTERACTION.reactionDurationMs) this.reactionAt = null;
   }
   react(now, source = 'keyboard') {
     this.settle(now);
@@ -151,7 +164,7 @@ export class PetInteraction {
       return { ...common, kind: 'task', state: this.activity, frame: this.reducedMotion ? 0 : frameAt(this.activity, now - this.activityAt) };
     }
     if (this.reactionAt !== null) {
-      return { ...common, kind: 'affection', state: 'jumping', frame: this.reducedMotion ? 2 : frameAt('jumping', now - this.reactionAt) };
+      return { ...common, kind: 'affection', state: 'jumping', frame: this.reducedMotion ? 2 : reactionFrameAt(now - this.reactionAt) };
     }
     if (this.near && this.pointer) {
       return { ...common, kind: 'gaze', direction: this.gazeDirection() };

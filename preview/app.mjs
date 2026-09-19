@@ -41,7 +41,7 @@ function setMode(next) {
   $('interaction-options').hidden = !interactive;
   $('interactive').setAttribute('aria-pressed', String(interactive));
   $('hint').textContent = interactive
-    ? '靠近时注视；停留或轻点回应一次。按住拖动可移动，松手不会再触发亲近。'
+    ? '靠近时注视；停留片刻或轻点，舒缓回应约 2.4 秒。拖动松手不会再触发亲近。'
     : '点击下方缩略帧可暂停定位。基线用于检查脚底与角色大小。';
 }
 for (const [key, value] of Object.entries(STATES)) stateButtons.set(key, button(value.label, () => selectState(key), $('states')));
@@ -110,14 +110,14 @@ function paint(now = performance.now()) {
   $('state-name').textContent = a.state === 'look' ? DIRECTIONS[a.frame] + '°' : a.state === 'neutral' ? '默认姿势' : STATES[a.state].label;
   $('mode-label').textContent = mode === 'interactive' ? '互动体验 · 浏览器原型'
     : mode === 'sequence' ? SEQUENCES[sequence].label : mode === 'pointer' ? '预览区指针跟随'
-    : mode === 'look-loop' ? '16方向连续检查' : ['direction', 'neutral'].includes(mode) ? '方向定位' : '单个动作';
+    : mode === 'look-loop' ? '16方向连续检查' : ['direction', 'neutral'].includes(mode) ? '方向定位' : '原生节奏检查';
   $('play').textContent = playing ? '暂停' : '播放'; $('play').setAttribute('aria-pressed', String(playing));
   $('frame-label').textContent = a.state === 'look' ? '方向 ' + (a.frame + 1) + ' / 16' : a.state === 'neutral' ? '默认姿势' : '第 ' + (a.frame + 1) + ' / ' + STATES[a.state].durations.length + ' 帧';
   for (const [k, b] of stateButtons) b.classList.toggle('active', a.state === k);
   directionButtons.forEach((b, i) => b.classList.toggle('active', a.state === 'look' && a.frame === i));
   $('pointer').setAttribute('aria-pressed', String(mode === 'pointer'));
   if (mode === 'interactive') {
-    const labels = { drag: '跟着你移动', task: '专注当前任务', affection: '眯眼，轻轻回应', gaze: '注意到你了', idle: '安静陪伴' };
+    const labels = { drag: '跟着你移动', task: '专注当前任务', affection: '放松下来，轻轻回应', gaze: '注意到你了', idle: '安静陪伴' };
     const status = labels[a.kind] + (a.cooldownMs > 0 && a.kind !== 'affection' ? ' · 稍后再亲近' : '');
     if ($('interaction-status').textContent !== status) $('interaction-status').textContent = status;
   }
@@ -222,12 +222,12 @@ $('zoom').addEventListener('change', () => {
 });
 image.onload = () => {
   if (image.naturalWidth !== 1536 || image.naturalHeight !== 2288) { $('asset-status').textContent = '图集尺寸错误：需要1536×2288'; return; }
-  ready = true; $('asset-status').textContent = '猎手性格版 · v2 · 9组动作 / 16方向' + (requested ? ' · 候选版本' : '');
+  ready = true; $('asset-status').textContent = '舒缓亲近版 · v2 · 9组动作 / 16方向' + (requested ? ' · 候选版本' : '');
   paint();
 };
 image.onerror = () => { $('asset-status').textContent = '图集未能读取，请从仓库根目录启动本地HTTP服务。'; };
 const requested = new URLSearchParams(location.search).get('atlas');
-image.src = requested && !requested.startsWith('/') && /^[a-zA-Z0-9_./-]+$/.test(requested) ? requested : '../spritesheet.webp?v=huntress-83e149e8e6c0';
+image.src = requested && !requested.startsWith('/') && /^[a-zA-Z0-9_./-]+$/.test(requested) ? requested : '../spritesheet.webp?v=calm-8d80bacfcb66';
 function tick(now) {
   if (mode === 'interactive') paint(now);
   else if (last && playing) { elapsed += Math.min(now - last, 250) * speed; paint(now); }

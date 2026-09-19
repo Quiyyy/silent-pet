@@ -31,12 +31,12 @@
       "source": "source/rows/jumping.png",
       "prompt": "prompts/rows/jumping.md",
       "layout_guide": "source/layout-guides/jumping.png",
-      "meaning": "User-approved quiet affectionate response in the native hover/jumping slot.",
-      "revision": "2026-09-19-affection",
+      "meaning": "Held gentle half-closed eyes and small smile with minimal breathing; no rapid open-close blink or nod loop.",
+      "revision": "2026-09-19-calm-affection",
       "input_images": [
-        "https://raw.githubusercontent.com/Quiyyy/silent-pet/1d6d3735332a727ba1206faa521bf09947c6b905/source/reference.png",
-        "https://raw.githubusercontent.com/Quiyyy/silent-pet/1d6d3735332a727ba1206faa521bf09947c6b905/source/layout-guides/jumping.png",
-        "https://raw.githubusercontent.com/Quiyyy/silent-pet/1d6d3735332a727ba1206faa521bf09947c6b905/source/look-anchors.png"
+        "https://raw.githubusercontent.com/Quiyyy/silent-pet/52ec3d705a5584134de7ee0bbb2397a1315795f3/source/reference.png",
+        "https://raw.githubusercontent.com/Quiyyy/silent-pet/52ec3d705a5584134de7ee0bbb2397a1315795f3/source/layout-guides/jumping.png",
+        "https://raw.githubusercontent.com/Quiyyy/silent-pet/52ec3d705a5584134de7ee0bbb2397a1315795f3/source/look-anchors.png"
       ],
       "source_background": "transparent RGBA",
       "extraction": "stable-slots; source component check and independent final visual QA passed"
@@ -116,12 +116,9 @@
   ],
   "final": "spritesheet.webp",
   "final_constraints": "docs/production.md",
-  "revision": "2026-09-19-huntress",
+  "revision": "2026-09-19-calm-affection",
   "look_down_anchor": "source/look-down-anchor.png",
   "optimized_rows": [
-    "idle",
-    "running-right",
-    "running-left",
-    "review"
+    "jumping"
   ]
 }

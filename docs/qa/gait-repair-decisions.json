@@ -1,0 +1,23 @@
+{
+  "previous_user_feedback_overrides_prior_qa": true,
+  "attempts": [
+    {
+      "kind": "8-frame row from skeleton guide",
+      "attempts": 2,
+      "accepted": false,
+      "reason": "Near leg repeatedly remains forward; no proper alternating support, some overlapping feet and crop risk."
+    },
+    {
+      "kind": "4 anatomical character keyposes",
+      "attempts": 1,
+      "accepted": false,
+      "reason": "C repeats A support and D repeats B; support exchange not readable."
+    },
+    {
+      "kind": "4 diagnostic colored keyposes",
+      "attempts": 1,
+      "accepted_as_finished_row": false,
+      "accepted_reference_scope": "Correct A/B/C/D foot positions and upright side camera; occlusion and excessive lift must be corrected in final row."
+    }
+  ]
+}

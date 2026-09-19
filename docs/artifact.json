@@ -1,6 +1,6 @@
 {
-  "revision": "2026-09-19-huntress",
-  "sha256": "83e149e8e6c0739f8e5564fee042eef2b20a92eb806cba6b83a70aee58db3d9d",
+  "revision": "2026-09-19-calm-affection",
+  "sha256": "8d80bacfcb664f06d83453f2dc45bfbb23251fe0a7de7d2e011900efbe2bca31",
   "spriteVersionNumber": 2,
   "width": 1536,
   "height": 2288,
@@ -8,18 +8,31 @@
   "directions": 16,
   "standard_animations": 9,
   "validation": "docs/qa/installed-validation.json",
-  "visual_qa": "docs/qa/huntress-visual-qa.json",
+  "visual_qa": "docs/qa/held-hover-visual-qa.json",
   "blind_qa": "docs/qa/direction-blind-validation.json",
   "blind_summary": "docs/qa/blind-summary.json",
-  "interactive_tests": "docs/qa/huntress-tests.json",
+  "interactive_tests": "docs/qa/calm-affection-tests.json",
   "optimization_report": "docs/optimization-2026-09-19.md",
   "retained_visual_qa": [
     "docs/qa/final-visual-qa.json",
     "docs/qa/affection-visual-qa.json"
   ],
-  "preservation": "docs/qa/huntress-preservation.json",
-  "interaction_report": "docs/interaction-2026-09-19.md",
-  "chroma_despill": "docs/qa/chroma-despill-huntress.json",
+  "preservation": "docs/qa/held-hover-preservation.json",
+  "interaction_report": "docs/calm-affection-2026-09-19.md",
+  "chroma_despill": "docs/qa/chroma-despill-held-hover.json",
   "geometry": "docs/qa/huntress-geometry.json",
-  "current_report": "docs/huntress-design-2026-09-19.md"
+  "current_report": "docs/calm-affection-2026-09-19.md",
+  "known_issues": [
+    {
+      "states": [
+        "running-right",
+        "running-left"
+      ],
+      "status": "user-reported-unresolved",
+      "reason": "User rejected forward posture and discontinuous leg movement. Earlier gait QA pass is superseded.",
+      "next_action": "Await explicit choice of layered programmatic animation; rejected generated rows were not installed.",
+      "proposal": "docs/layered-gait-proposal.md"
+    }
+  ],
+  "archived_interaction_report": "docs/interaction-2026-09-19.md"
 }

@@ -15,20 +15,20 @@ test('proximity enters, uses hysteresis, leaves and respects center deadzone',()
 test('quick click plays one reaction, returns to gaze, and cooldown rejects repeats',()=>{
  const p=new PetInteraction();p.pointerDown(point(),0);assert.equal(p.pointerUp(point(),50).type,'reaction');
  assert.equal(p.snapshot(50).kind,'affection');assert.equal(p.snapshot(50).frame,0);
- assert.equal(p.snapshot(50+duration('jumping')).kind,'gaze');
- p.pointerDown(point(),900);p.pointerUp(point(),920);assert.equal(p.reactionId,1);
+ p.pointerDown(point(),900);p.pointerUp(point(),920);assert.equal(p.reactionId,1);assert.equal(p.reactionAt,50);
+ assert.equal(p.snapshot(50+INTERACTION.reactionDurationMs).kind,'gaze');
  assert.equal(p.react(50+INTERACTION.cooldownMs-1),false);
  assert.equal(p.react(50+INTERACTION.cooldownMs),true);
 });
 test('hover dwell is one-shot per entry, including after cooldown expires',()=>{
  const p=new PetInteraction();p.updatePointer(point(),0);
- assert.notEqual(p.snapshot(349).kind,'affection');
- assert.equal(p.snapshot(350).kind,'affection');
+ assert.notEqual(p.snapshot(499).kind,'affection');
+ assert.equal(p.snapshot(500).kind,'affection');
  assert.notEqual(p.snapshot(10000).kind,'affection');assert.equal(p.reactionId,1);
- p.leave();p.updatePointer(point(),10001);p.snapshot(10351);assert.equal(p.reactionId,2);
+ p.leave();p.updatePointer(point(),10001);p.snapshot(10501);assert.equal(p.reactionId,2);
 });
 test('hover entered during cooldown is consumed instead of queued for later',()=>{
- const p=new PetInteraction();p.react(0);p.leave();p.updatePointer(point(),900);p.snapshot(1250);
+ const p=new PetInteraction();p.react(0);p.leave();p.updatePointer(point(),900);p.snapshot(1400);
  p.snapshot(5000);assert.equal(p.reactionId,1);
 });
 test('drag outranks an active reaction; release never becomes affection click',()=>{
@@ -75,4 +75,22 @@ test('gaze does not flicker at a direction boundary and wraps across north',()=>
  p.updatePointer(at(350),5);assert.equal(p.snapshot(5).direction,0);
  p.updatePointer(at(344),6);assert.equal(p.snapshot(6).direction,15);
  p.leave();p.updatePointer(at(359),7);assert.equal(p.snapshot(7).direction,0);
+});
+
+test('affection holds a gentle expression for 2.4 seconds without changing native timing',()=>{
+ const p=new PetInteraction();assert.equal(p.react(1000),true);
+ assert.equal(duration('jumping'),840);
+ assert.equal(INTERACTION.reactionDurationMs,2400);
+ for(const [time,frame] of [[1000,0],[1399,0],[1400,1],[1899,1],[1900,2],[2549,2],[2550,3],[3049,3],[3050,4],[3399,4]]){
+  const s=p.snapshot(time);assert.equal(s.kind,'affection');assert.equal(s.frame,frame);
+ }
+ assert.equal(p.snapshot(3400).kind,'idle');
+ assert.equal(p.react(4999),false);assert.equal(p.react(5000),true);
+});
+test('leaving the hover area does not cut off the slow reaction or queue a repeat',()=>{
+ const p=new PetInteraction();p.updatePointer(point(),0);p.snapshot(500);p.leave();
+ assert.equal(p.snapshot(1800).kind,'affection');
+ assert.equal(p.snapshot(2900).kind,'idle');
+ p.updatePointer(point(),3000);p.snapshot(3500);p.snapshot(8000);
+ assert.equal(p.reactionId,1);
 });

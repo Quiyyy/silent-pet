@@ -5,7 +5,7 @@
 <header><div class="mark">s<span>p</span></div><div><p class="eyebrow">SILENT PET / MOTION LAB</p><h1>让每一个小动作都自然。</h1></div><a href="../README.md" class="doc">项目说明 ↗</a></header>
 <main>
 <section class="stage-card">
-  <div class="stage-top"><span id="mode-label">单个动作</span><span class="pill" id="state-name">安静待机</span></div>
+  <div class="stage-top"><span id="mode-label">原生节奏检查</span><span class="pill" id="state-name">安静待机</span></div>
   <div id="stage" class="stage checker" data-background="checker">
     <div class="baseline" aria-hidden="true"></div>
     <canvas id="pet" width="192" height="208" aria-label="宠物动作预览"></canvas>
@@ -18,14 +18,14 @@
 <aside>
   <section class="panel interaction-panel"><p class="eyebrow">PLAY / INTERACTION</p><h2>安静地陪着你</h2>
     <button id="interactive" type="button" aria-pressed="false">进入互动体验</button>
-    <p class="hint">靠近注视 · 轻点亲近 · 拖动移动</p>
+    <p class="hint">靠近注视 · 2.4 秒舒缓回应 · 拖动移动</p>
     <div id="interaction-options" hidden>
       <p id="interaction-status" role="status">安静陪伴</p>
       <label>当前状态 <select id="activity" aria-label="模拟任务状态"><option value="idle">空闲</option><option value="running">工作中</option><option value="waiting">等待回应</option><option value="review">检查结果</option><option value="failed">遇到问题</option></select></label>
       <label class="motion-option"><input id="reduced-motion" type="checkbox">减少动态效果</label>
       <button id="reset-position" type="button">回到中间</button>
     </div>
-    <p class="hint native-note">互动体验为浏览器原型。安装到 Codex 后，亲近动画使用现有悬停槽位；鼠标靠近注视、点击回应与冷却仍需客户端支持。</p>
+    <p class="hint native-note">检查模式按 Codex 原有节奏播放。互动体验的舒缓时长、靠近注视、点击与冷却仅在本预览生效；桌面端通过更克制的亲近姿态减轻急促感。</p>
   </section>
 
   <section class="panel"><p class="eyebrow">01 / STATES</p><h2>九种状态</h2><div id="states" class="button-grid"></div></section>
