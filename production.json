@@ -13,7 +13,18 @@
       "state": "idle",
       "source": "source/rows/idle.png",
       "prompt": "prompts/rows/idle.md",
-      "layout_guide": "source/layout-guides/idle.png"
+      "layout_guide": "source/layout-guides/idle.png",
+      "revision": "2026-09-19-huntress",
+      "extraction": "stable-slots; component/source-edge and final visual QA passed",
+      "input_images": [
+        "https://raw.githubusercontent.com/Quiyyy/silent-pet/c6f202f10860488b22915c2d97c82df6979c0148/source/reference.png",
+        "https://raw.githubusercontent.com/Quiyyy/silent-pet/c6f202f10860488b22915c2d97c82df6979c0148/source/layout-guides/idle.png",
+        "https://raw.githubusercontent.com/Quiyyy/silent-pet/c6f202f10860488b22915c2d97c82df6979c0148/source/look-anchors.png"
+      ],
+      "source_background": "transparent RGBA",
+      "attempts": 2,
+      "selected_attempt": 2,
+      "earlier_prompt": "prompts/attempts/huntress-idle-first.md"
     },
     {
       "state": "jumping",
@@ -46,19 +57,43 @@
       "state": "review",
       "source": "source/rows/review.png",
       "prompt": "prompts/rows/review.md",
-      "layout_guide": "source/layout-guides/review.png"
+      "layout_guide": "source/layout-guides/review.png",
+      "revision": "2026-09-19-huntress",
+      "extraction": "stable-slots; component/source-edge and final visual QA passed",
+      "input_images": [
+        "https://raw.githubusercontent.com/Quiyyy/silent-pet/c6f202f10860488b22915c2d97c82df6979c0148/source/reference.png",
+        "https://raw.githubusercontent.com/Quiyyy/silent-pet/c6f202f10860488b22915c2d97c82df6979c0148/source/layout-guides/review.png",
+        "https://raw.githubusercontent.com/Quiyyy/silent-pet/c6f202f10860488b22915c2d97c82df6979c0148/source/look-anchors.png"
+      ],
+      "source_background": "transparent RGBA"
     },
     {
       "state": "running-left",
       "source": "source/rows/running-left.png",
       "prompt": "prompts/rows/running-left.md",
-      "layout_guide": "source/layout-guides/running-left.png"
+      "layout_guide": "source/layout-guides/running-left.png",
+      "revision": "2026-09-19-huntress",
+      "extraction": "stable-slots; component/source-edge and final visual QA passed",
+      "derived_from": "source/rows/running-right.png",
+      "transform": "framewise-horizontal-mirror-preserving-order",
+      "mirror_approved": true
     },
     {
       "state": "running-right",
       "source": "source/rows/running-right.png",
       "prompt": "prompts/rows/running-right.md",
-      "layout_guide": "source/layout-guides/running-right.png"
+      "layout_guide": "source/layout-guides/running-right.png",
+      "revision": "2026-09-19-huntress",
+      "extraction": "stable-slots; component/source-edge and final visual QA passed",
+      "input_images": [
+        "https://raw.githubusercontent.com/Quiyyy/silent-pet/c6f202f10860488b22915c2d97c82df6979c0148/source/reference.png",
+        "https://raw.githubusercontent.com/Quiyyy/silent-pet/c6f202f10860488b22915c2d97c82df6979c0148/source/layout-guides/running-right.png",
+        "https://raw.githubusercontent.com/Quiyyy/silent-pet/c6f202f10860488b22915c2d97c82df6979c0148/source/look-anchors.png"
+      ],
+      "source_background": "transparent RGBA",
+      "attempts": 2,
+      "selected_attempt": 1,
+      "rejected_attempt_prompt": "prompts/attempts/huntress-running-right-rejected.md"
     },
     {
       "state": "running",
@@ -81,15 +116,12 @@
   ],
   "final": "spritesheet.webp",
   "final_constraints": "docs/production.md",
-  "revision": "2026-09-19",
+  "revision": "2026-09-19-huntress",
   "look_down_anchor": "source/look-down-anchor.png",
   "optimized_rows": [
+    "idle",
     "running-right",
     "running-left",
-    "jumping",
-    "running",
-    "review",
-    "look-row-9",
-    "look-row-10"
+    "review"
   ]
 }

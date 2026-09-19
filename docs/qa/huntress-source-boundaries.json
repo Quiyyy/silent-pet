@@ -1,0 +1,59 @@
+{
+  "idle": {
+    "size": [
+      2172,
+      724
+    ],
+    "bbox_alpha_gt16": [
+      77,
+      166,
+      2093,
+      559
+    ],
+    "outer_margins": [
+      77,
+      166,
+      79,
+      165
+    ],
+    "transparent_background": true
+  },
+  "running-right": {
+    "size": [
+      2172,
+      724
+    ],
+    "bbox_alpha_gt16": [
+      19,
+      188,
+      2156,
+      535
+    ],
+    "outer_margins": [
+      19,
+      188,
+      16,
+      189
+    ],
+    "transparent_background": true
+  },
+  "review": {
+    "size": [
+      2172,
+      724
+    ],
+    "bbox_alpha_gt16": [
+      22,
+      145,
+      2148,
+      603
+    ],
+    "outer_margins": [
+      22,
+      145,
+      24,
+      121
+    ],
+    "transparent_background": true
+  }
+}

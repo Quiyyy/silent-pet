@@ -1,6 +1,6 @@
 {
-  "revision": "2026-09-19-affection",
-  "sha256": "c354ee89ed5532ee4b3229163327f70006e7a0dfa50b5bd11c37a557c037676c",
+  "revision": "2026-09-19-huntress",
+  "sha256": "83e149e8e6c0739f8e5564fee042eef2b20a92eb806cba6b83a70aee58db3d9d",
   "spriteVersionNumber": 2,
   "width": 1536,
   "height": 2288,
@@ -8,12 +8,18 @@
   "directions": 16,
   "standard_animations": 9,
   "validation": "docs/qa/installed-validation.json",
-  "visual_qa": "docs/qa/affection-visual-qa.json",
+  "visual_qa": "docs/qa/huntress-visual-qa.json",
   "blind_qa": "docs/qa/direction-blind-validation.json",
   "blind_summary": "docs/qa/blind-summary.json",
-  "interactive_tests": "docs/qa/interaction-tests.json",
+  "interactive_tests": "docs/qa/huntress-tests.json",
   "optimization_report": "docs/optimization-2026-09-19.md",
-  "retained_visual_qa": "docs/qa/final-visual-qa.json",
-  "preservation": "docs/qa/preservation.json",
-  "interaction_report": "docs/interaction-2026-09-19.md"
+  "retained_visual_qa": [
+    "docs/qa/final-visual-qa.json",
+    "docs/qa/affection-visual-qa.json"
+  ],
+  "preservation": "docs/qa/huntress-preservation.json",
+  "interaction_report": "docs/interaction-2026-09-19.md",
+  "chroma_despill": "docs/qa/chroma-despill-huntress.json",
+  "geometry": "docs/qa/huntress-geometry.json",
+  "current_report": "docs/huntress-design-2026-09-19.md"
 }

@@ -1,22 +1,8 @@
-Create one horizontal animation strip for Codex pet `bone-horn-sorceress`, state `idle`.
-
-Use the attached canonical base for identity. Use the attached layout guide only for slot count, spacing, centering, and padding; do not draw the guide.
-
-Output exactly 6 full-body frames in one left-to-right row on flat pure blue #0000FF. Treat the row as 6 invisible equal-width slots: one centered complete pose per slot, evenly spaced, with no overlap, clipping, empty slots, labels, or borders.
-
-Identity: same pet in every frame: Preserve existing chibi sorceress identity: bone skull with two brown horns, long white hair, tan skin, large green eyes, forest-green cloak, ivory and brown adventurer armor, brown boots, parchment scroll. Smooth restrained animation with stable body scale and boot baseline, coherent cyclic transitions, no sudden prop changes.. Preserve silhouette, face, proportions, markings, palette, material, style, and props.
-Style: Pet-safe sprite: compact full-body mascot, readable in a 192x208 cell, clear silhouette, simple face, stable palette/materials, and crisp edges for chroma-key extraction. Style `auto`: Infer the most appropriate pet-safe style from the user request and reference images, then keep that exact style consistent across every row. User style notes: Match original shaded anime chibi illustration..
-Animation continuity: keep apparent pet scale and baseline stable within the row unless the state itself intentionally changes vertical position, such as `jumping`. Move the pose within the slot instead of redrawing the pet larger or smaller frame to frame.
-
-State action: Calm low-distraction resting loop: subtle breathing, tiny blink, slight head/body bob, and only quiet persona-preserving motion.
-
-State requirements:
-- CRITICAL: idle is the low-distraction baseline state and the first frame is also used as the reduced-motion static pet.
-- Use only subtle idle motion: gentle breathing, a tiny blink, a slight head or body bob, a very small material sway, or another quiet motion that fits the pet persona.
-- Keep the pet essentially in the same pose, facing direction, silhouette, markings, palette, and prop state across all 6 frames.
-- Idle variation must stay calm but still read as animation; do not repeat effectively identical copies across the loop.
-- Do not show waving, walking, running, jumping, talking, working, reviewing, emotional reactions, large gestures, item interactions, or new props.
-- Feet, base, body, or object anchor should remain planted or nearly planted.
-- The first and last frames should be very close visually so the loop feels calm and does not pop.
-
-Clean extraction: crisp opaque edges, safe padding, no scenery, text, guide marks, checkerboard, shadows, glows, motion blur, speed lines, dust, detached effects, stray pixels, or chroma-key colors inside the pet.
+Create ONE coherent horizontal sprite animation strip for the exact approved chibi Silent huntress pet.
+Input 1: canonical character identity. Input 2: frame-count/slot layout ONLY. Input 3: approved cardinal reference for identity, practical scale, clothes and prop attachment, not desired gaze directions.
+Preserve the tan/dark skin, white hair, green eyes, horned bone skull headdress, green cloak, armor, gloves, tan boots, existing parchment, exact face/head/body proportions, and painterly chibi rendering. Improve expression clarity with clean eyelid/brow/mouth shapes; do not redesign the face or make the eyes huge.
+Persona: quiet, alert, nimble, subtly self-assured; relaxed enough to be a desktop companion. Keep the original parchment in both hands but lower its resting position by only about 3 pixels at final 192x208 size, showing a little more torso; do not roll/unroll it, resize it, add text or change sides. No new weapons, tools or props in this iteration.
+Keep one shared character scale and baseline throughout; boots/body/prop form a consistent connected silhouette. Feet planted unless explicitly stepping. Frame 0 and final frame should join softly, with no size change or sudden head snap.
+Exactly the requested number of separate complete full bodies in one row with generous spacing. Genuinely transparent RGBA background. No background panel/checkerboard, floor, shadows, glow, motion streaks, detached effects, text, labels, grid, numbers or cropping. This is a row strip, not an atlas.
+STATE idle, exactly SIX frames. Calm, watchful rest, facing slightly toward viewer as in canonical. Natural relaxed eyelids, composed mouth, slight attentive eye participation. Six progressive phases of extremely subtle breathing and cloak/hair settling, with a very small eyelid relaxation around the middle, then back. Keep the eyes open enough to remain alert; no full eye-squeeze, smile cycle, nod, waving, reading, jumping, foot shifting or object manipulation. At final size body translation only about 1 pixel and head/cloth motion no more than 2 pixels. There must be visible restrained micro-variation, not six duplicates.
+LAYOUT PRECISION: reduce all six figures uniformly within the canvas so the COMPLETE silhouettes are safely inset from every canvas boundary. The leftmost hair and rightmost cloak must have at least 4% of total canvas width of empty transparent outer margin. Leave clear empty transparent channels between all six bodies. Prefer smaller figures and more empty canvas to any hair/cape cropping or adjacent overlap. Preserve character proportions and identical scale. Keep all prior character, state and alert-eye constraints exactly.

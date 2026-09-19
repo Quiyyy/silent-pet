@@ -1,0 +1,244 @@
+{
+  "ok": true,
+  "frames_root": "run\\qa\\new-rows-auto",
+  "states": [
+    "idle",
+    "running-right"
+  ],
+  "errors": [],
+  "warnings": [],
+  "rows": [
+    {
+      "state": "idle",
+      "expected_frames": 6,
+      "actual_frames": 6,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "run\\qa\\new-rows-auto\\idle\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 22035,
+          "bbox": [
+            17,
+            5,
+            174,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "run\\qa\\new-rows-auto\\idle\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 21670,
+          "bbox": [
+            18,
+            5,
+            173,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "run\\qa\\new-rows-auto\\idle\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 21793,
+          "bbox": [
+            18,
+            5,
+            174,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "run\\qa\\new-rows-auto\\idle\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 21861,
+          "bbox": [
+            18,
+            5,
+            174,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "run\\qa\\new-rows-auto\\idle\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 21639,
+          "bbox": [
+            19,
+            5,
+            173,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 5,
+          "file": "run\\qa\\new-rows-auto\\idle\\05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 21428,
+          "bbox": [
+            19,
+            5,
+            173,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    },
+    {
+      "state": "running-right",
+      "expected_frames": 8,
+      "actual_frames": 8,
+      "extraction_method": "components",
+      "ok": true,
+      "errors": [],
+      "warnings": [],
+      "frames": [
+        {
+          "index": 0,
+          "file": "run\\qa\\new-rows-auto\\running-right\\00.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 20497,
+          "bbox": [
+            21,
+            5,
+            171,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 1,
+          "file": "run\\qa\\new-rows-auto\\running-right\\01.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 20300,
+          "bbox": [
+            19,
+            5,
+            172,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 2,
+          "file": "run\\qa\\new-rows-auto\\running-right\\02.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 19789,
+          "bbox": [
+            21,
+            5,
+            170,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 3,
+          "file": "run\\qa\\new-rows-auto\\running-right\\03.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 20602,
+          "bbox": [
+            19,
+            5,
+            172,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 4,
+          "file": "run\\qa\\new-rows-auto\\running-right\\04.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 20652,
+          "bbox": [
+            19,
+            5,
+            172,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 5,
+          "file": "run\\qa\\new-rows-auto\\running-right\\05.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 19942,
+          "bbox": [
+            20,
+            5,
+            172,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 6,
+          "file": "run\\qa\\new-rows-auto\\running-right\\06.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 20174,
+          "bbox": [
+            20,
+            5,
+            171,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        },
+        {
+          "index": 7,
+          "file": "run\\qa\\new-rows-auto\\running-right\\07.png",
+          "width": 192,
+          "height": 208,
+          "nontransparent_pixels": 20503,
+          "bbox": [
+            22,
+            5,
+            170,
+            203
+          ],
+          "edge_pixels": 0,
+          "chroma_adjacent_pixels": 0
+        }
+      ]
+    }
+  ]
+}

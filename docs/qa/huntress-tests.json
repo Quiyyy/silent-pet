@@ -1,0 +1,40 @@
+{
+  "revision": "2026-09-19-huntress",
+  "node_tests": {
+    "passed": 15,
+    "failed": 0
+  },
+  "syntax_check": "pass",
+  "browser_input_acceptance": {
+    "status": "blocked",
+    "reason": "Windows sandbox helper initialization failed."
+  },
+  "native_desktop_acceptance": {
+    "status": "not_performed",
+    "scope": "Installed-file and hash checks only; actual client reload requires user action if cached."
+  },
+  "visual_qa": "docs/qa/huntress-visual-qa.json",
+  "http_checks": [
+    {
+      "path": "preview/",
+      "status": 200,
+      "content_type": "text/html"
+    },
+    {
+      "path": "preview/app.mjs",
+      "status": 200,
+      "content_type": "text/javascript"
+    },
+    {
+      "path": "preview/model.mjs",
+      "status": 200,
+      "content_type": "text/javascript"
+    },
+    {
+      "path": "spritesheet.webp?v=huntress-83e149e8e6c0",
+      "status": 200,
+      "content_type": "application/octet-stream"
+    }
+  ],
+  "served_atlas_matches_installed": true
+}
