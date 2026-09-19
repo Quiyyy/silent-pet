@@ -1,0 +1,15 @@
+{
+  "full_rows_rebuilt": [
+    "running-right",
+    "running-left",
+    "waving"
+  ],
+  "other_used_cells_shortened_and_straightened": 54,
+  "upper_body_protection": "54 preclean cells preserve original y0..162 RGBA exactly, translated down8px; no face/gaze scaling or distortion",
+  "upper_body_translation_verified": true,
+  "gaze_semantics": "Existing blind evidence inherited from exact unchanged face/head pixels; only uniform8px translation and lower-leg changes",
+  "all_74_used_cells_single_connected_character": true,
+  "wave_regression": "qa/motion-tests.json verifies final upper head and outside hand envelope identical across4frames",
+  "previous_sha256": "adfc6699cf53e4bcbfdc8f7e08658cbe24ab3b5062c828f9cd84a08ab6fa9958",
+  "sha256": "e9135f701500d2679322f8490999d5e4063b830db9ae63a8d771756d0b3ed9fe"
+}

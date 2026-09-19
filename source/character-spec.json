@@ -3,5 +3,7 @@
   "limbs": "exactly two arms, two hands, two legs, two feet",
   "wave": "move existing character-right/viewer-left arm from scroll grip; other hand alone supports scroll",
   "style": "same approved horned bone mask, white hair, tan skin, green eyes and cape",
-  "authority": "User correction on 2026-09-20 overrides earlier assistant descriptions of boots/gloves."
+  "authority": "User corrections on 2026-09-20 supersede earlier muscular-legged and shoe-containing variants.",
+  "legs": "Short straight cartoon limbs, softly tapered stable width; compact bare feet. No muscular calf bulges, elongated ankle, S-shaped knee/ankle, sharp contour notches.",
+  "motion": "Directional movement rotates complete painted legs without deforming knees/ankles. Wave transforms an isolated hand layer only, never horns/head/hair."
 }

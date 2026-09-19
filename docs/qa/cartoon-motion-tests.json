@@ -1,0 +1,230 @@
+{
+  "ok": true,
+  "trajectory_samples": 1001,
+  "rigid_whole_limb_matrices_verified": true,
+  "no_knee_or_ankle_warp": true,
+  "limb_scale_exactly_one": true,
+  "at_least_one_supporting_foot": true,
+  "foot_contact_plane_verified": true,
+  "loop_trajectory_continuous": true,
+  "maximum_leg_rotation_degrees": 8.626926558678639,
+  "maximum_foot_lift_px": 2.6,
+  "framewise_left_mirror": true,
+  "wave_head_horns_and_upper_hair_identical": true,
+  "wave_face_identical": true,
+  "wave_outside_hand_envelope_identical": true,
+  "wave_difference_boxes": [
+    [
+      29,
+      71,
+      66,
+      110
+    ],
+    [
+      29,
+      71,
+      67,
+      110
+    ],
+    [
+      29,
+      71,
+      66,
+      110
+    ]
+  ],
+  "gaze_32_legs_contour_regression": [
+    {
+      "row": 9,
+      "column": 0,
+      "side": 0,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 9,
+      "column": 0,
+      "side": 1,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 9,
+      "column": 1,
+      "side": 0,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 9,
+      "column": 1,
+      "side": 1,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 9,
+      "column": 2,
+      "side": 0,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 9,
+      "column": 2,
+      "side": 1,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 9,
+      "column": 3,
+      "side": 0,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 9,
+      "column": 3,
+      "side": 1,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 9,
+      "column": 4,
+      "side": 0,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 9,
+      "column": 4,
+      "side": 1,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 9,
+      "column": 5,
+      "side": 0,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 9,
+      "column": 5,
+      "side": 1,
+      "max_adjacent_edge_step_px": 2
+    },
+    {
+      "row": 9,
+      "column": 6,
+      "side": 0,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 9,
+      "column": 6,
+      "side": 1,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 9,
+      "column": 7,
+      "side": 0,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 9,
+      "column": 7,
+      "side": 1,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 10,
+      "column": 0,
+      "side": 0,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 10,
+      "column": 0,
+      "side": 1,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 10,
+      "column": 1,
+      "side": 0,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 10,
+      "column": 1,
+      "side": 1,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 10,
+      "column": 2,
+      "side": 0,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 10,
+      "column": 2,
+      "side": 1,
+      "max_adjacent_edge_step_px": 2
+    },
+    {
+      "row": 10,
+      "column": 3,
+      "side": 0,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 10,
+      "column": 3,
+      "side": 1,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 10,
+      "column": 4,
+      "side": 0,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 10,
+      "column": 4,
+      "side": 1,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 10,
+      "column": 5,
+      "side": 0,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 10,
+      "column": 5,
+      "side": 1,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 10,
+      "column": 6,
+      "side": 0,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 10,
+      "column": 6,
+      "side": 1,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 10,
+      "column": 7,
+      "side": 0,
+      "max_adjacent_edge_step_px": 1
+    },
+    {
+      "row": 10,
+      "column": 7,
+      "side": 1,
+      "max_adjacent_edge_step_px": 1
+    }
+  ]
+}

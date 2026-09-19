@@ -73,7 +73,7 @@ docs/                    制作说明与验收记录
 - 三个隔离审查代理完成随机 A/B 方向盲测，四主方向通过。
 - 独立视觉审查检查了正常尺寸逐帧顺序与闭环；未宣称在桌面应用中实时播放验收。
 
-完整记录见 [验收摘要](docs/artifact.json)、[本轮视觉检查](docs/qa/barefoot-wave-visual-qa.json) 和 [制作说明](docs/production.md)。
+完整记录见 [验收摘要](docs/artifact.json)、[本轮视觉检查](docs/qa/cartoon-visual-qa.json) 和 [制作说明](docs/production.md)。
 
 ## 2026-09-19 动作与方向优化（前一版）
 
@@ -85,21 +85,22 @@ docs/                    制作说明与验收记录
 
 详细结果与限制见[本轮验收报告](docs/optimization-2026-09-19.md)。宿主桌面客户端的实时鼠标操作未自动测试，浏览器预览验收单独记录。
 
-## 赤脚与招手修复（当前）
+## 短直卡通腿与招手修复（当前）
 
-- 招手改为原有右臂抬起，另一只手托住卷轴；修正多余手臂和手掌过小的问题。
-- 所有74个有效姿态统一赤脚，待机、移动、招手和视线之间不再突然出现鞋子。
-- 左右移动采用连续腿部变形、足底接触与脚掌滚动，身体和披风轻微跟随换步，保持直立。
+- 恢复短直、轮廓简洁的卡通裸腿；移除上一版膝踝的S形弯折、尖褶和脚背拉长。
+- 移动改为完整腿部小幅摆动、交替抬脚，腿宽与脚掌保持稳定。
+- 招手只移动独立手掌图层，左角、头骨与头发不再同步抽搐。
+- 全部74格、16视线及跨状态切换经过独立视觉复核；制作中发现的视线腿部尖缺口已修复后再验收。
 
-结构检查、1001相位运动检查、独立视觉检查、17项逻辑测试和11项浏览器交互回归通过。原生桌面实时播放未自动验收；移动内膝在第4/5帧仍略紧，宿主末帧220ms的节奏保持不变。
+结构检查、1001相位运动检查、17项逻辑和11项浏览器回归通过。原生桌面实时播放未自动验收，宿主8帧与末帧220ms的节奏保持。
 
 <p>
-  <img src="previews/waving.gif" alt="修复后的两臂招手" width="192" height="208">
-  <img src="previews/running-right.gif" alt="赤脚向右移动" width="192" height="208">
-  <img src="previews/running-left.gif" alt="赤脚向左移动" width="192" height="208">
+  <img src="previews/waving.gif" alt="头角固定的招手" width="192" height="208">
+  <img src="previews/running-right.gif" alt="短直卡通腿向右移动" width="192" height="208">
+  <img src="previews/running-left.gif" alt="短直卡通腿向左移动" width="192" height="208">
 </p>
 
-[制作与验收](docs/barefoot-wave-2026-09-20.md) · [角色约束](docs/character-spec.md) · [招手对照](previews/barefoot/comparison-waving.jpg) · [移动对照](previews/barefoot/comparison-running-right.jpg) · [状态切换](previews/transition-drag.gif)
+[制作与验收](docs/cartoon-motion-2026-09-20.md) · [角色约束](docs/character-spec.md) · [招手对照](previews/cartoon/comparison-waving.jpg) · [移动对照](previews/cartoon/comparison-running-right.jpg) · [状态切换](previews/transition-drag.gif)
 
 ### 招手什么时候出现
 

@@ -1,0 +1,255 @@
+{
+  "browser": "153.0.8010.50",
+  "mode": "isolated headless Chrome on local owned preview; not native Codex UI",
+  "checks": {
+    "all_nine_state_buttons": true,
+    "wave_four_frames_and_trigger_hint": true,
+    "all_sixteen_directions": true,
+    "right_and_left_visit_all_eight_frames": {
+      "right": [
+        {
+          "at": 10.900000047683534,
+          "state": "running-right",
+          "frame": "0",
+          "mode": "state",
+          "kind": "inspection",
+          "reactionId": "0",
+          "reactionSource": ""
+        },
+        {
+          "at": 127.6000000476838,
+          "state": "running-right",
+          "frame": "1",
+          "mode": "state",
+          "kind": "inspection",
+          "reactionId": "0",
+          "reactionSource": ""
+        },
+        {
+          "at": 244.6000000476838,
+          "state": "running-right",
+          "frame": "2",
+          "mode": "state",
+          "kind": "inspection",
+          "reactionId": "0",
+          "reactionSource": ""
+        },
+        {
+          "at": 361.2000000476837,
+          "state": "running-right",
+          "frame": "3",
+          "mode": "state",
+          "kind": "inspection",
+          "reactionId": "0",
+          "reactionSource": ""
+        },
+        {
+          "at": 478.0000000476839,
+          "state": "running-right",
+          "frame": "4",
+          "mode": "state",
+          "kind": "inspection",
+          "reactionId": "0",
+          "reactionSource": ""
+        },
+        {
+          "at": 594.8000000476836,
+          "state": "running-right",
+          "frame": "5",
+          "mode": "state",
+          "kind": "inspection",
+          "reactionId": "0",
+          "reactionSource": ""
+        },
+        {
+          "at": 728.2000000476837,
+          "state": "running-right",
+          "frame": "6",
+          "mode": "state",
+          "kind": "inspection",
+          "reactionId": "0",
+          "reactionSource": ""
+        },
+        {
+          "at": 845.0000000476839,
+          "state": "running-right",
+          "frame": "7",
+          "mode": "state",
+          "kind": "inspection",
+          "reactionId": "0",
+          "reactionSource": ""
+        },
+        {
+          "at": 1061.9000000476835,
+          "state": "running-right",
+          "frame": "0",
+          "mode": "state",
+          "kind": "inspection",
+          "reactionId": "0",
+          "reactionSource": ""
+        },
+        {
+          "at": 1178.7000000476837,
+          "state": "running-right",
+          "frame": "1",
+          "mode": "state",
+          "kind": "inspection",
+          "reactionId": "0",
+          "reactionSource": ""
+        }
+      ],
+      "left": [
+        {
+          "at": 9.999999952316102,
+          "state": "running-left",
+          "frame": "0",
+          "mode": "state",
+          "kind": "inspection",
+          "reactionId": "0",
+          "reactionSource": ""
+        },
+        {
+          "at": 126.79999995231628,
+          "state": "running-left",
+          "frame": "1",
+          "mode": "state",
+          "kind": "inspection",
+          "reactionId": "0",
+          "reactionSource": ""
+        },
+        {
+          "at": 243.4999999523161,
+          "state": "running-left",
+          "frame": "2",
+          "mode": "state",
+          "kind": "inspection",
+          "reactionId": "0",
+          "reactionSource": ""
+        },
+        {
+          "at": 360.2999999523163,
+          "state": "running-left",
+          "frame": "3",
+          "mode": "state",
+          "kind": "inspection",
+          "reactionId": "0",
+          "reactionSource": ""
+        },
+        {
+          "at": 477.2999999523163,
+          "state": "running-left",
+          "frame": "4",
+          "mode": "state",
+          "kind": "inspection",
+          "reactionId": "0",
+          "reactionSource": ""
+        },
+        {
+          "at": 593.8999999523162,
+          "state": "running-left",
+          "frame": "5",
+          "mode": "state",
+          "kind": "inspection",
+          "reactionId": "0",
+          "reactionSource": ""
+        },
+        {
+          "at": 727.2999999523163,
+          "state": "running-left",
+          "frame": "6",
+          "mode": "state",
+          "kind": "inspection",
+          "reactionId": "0",
+          "reactionSource": ""
+        },
+        {
+          "at": 844.1999999523159,
+          "state": "running-left",
+          "frame": "7",
+          "mode": "state",
+          "kind": "inspection",
+          "reactionId": "0",
+          "reactionSource": ""
+        },
+        {
+          "at": 1060.999999952316,
+          "state": "running-left",
+          "frame": "0",
+          "mode": "state",
+          "kind": "inspection",
+          "reactionId": "0",
+          "reactionSource": ""
+        },
+        {
+          "at": 1177.8999999523166,
+          "state": "running-left",
+          "frame": "1",
+          "mode": "state",
+          "kind": "inspection",
+          "reactionId": "0",
+          "reactionSource": ""
+        }
+      ]
+    },
+    "hover_dwell_and_one_shot": {
+      "observed_dwell_ms": 496.0000000476839,
+      "observed_response_ms": 2402.5,
+      "reaction_count_after_5s": 1,
+      "frames": [
+        {
+          "at": 496.0000000476839,
+          "state": "jumping",
+          "frame": "0",
+          "mode": "interactive",
+          "kind": "affection",
+          "reactionId": "1",
+          "reactionSource": "hover"
+        },
+        {
+          "at": 896.5000000476839,
+          "state": "jumping",
+          "frame": "1",
+          "mode": "interactive",
+          "kind": "affection",
+          "reactionId": "1",
+          "reactionSource": "hover"
+        },
+        {
+          "at": 1396.9000000476835,
+          "state": "jumping",
+          "frame": "2",
+          "mode": "interactive",
+          "kind": "affection",
+          "reactionId": "1",
+          "reactionSource": "hover"
+        },
+        {
+          "at": 2047.7000000476837,
+          "state": "jumping",
+          "frame": "3",
+          "mode": "interactive",
+          "kind": "affection",
+          "reactionId": "1",
+          "reactionSource": "hover"
+        },
+        {
+          "at": 2548.2000000476837,
+          "state": "jumping",
+          "frame": "4",
+          "mode": "interactive",
+          "kind": "affection",
+          "reactionId": "1",
+          "reactionSource": "hover"
+        }
+      ]
+    },
+    "rapid_click_does_not_restart": true,
+    "actual_drag_capture_direction_and_release_no_click": true,
+    "task_priority": true,
+    "reduced_motion": true,
+    "dark_and_2x": true,
+    "keyboard_activation_and_cancel": true
+  },
+  "console_errors": [],
+  "ok": true
+}

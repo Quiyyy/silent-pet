@@ -1,0 +1,38 @@
+[
+  {
+    "frame": 0,
+    "hand_angle_deg": -3,
+    "wrist_pivot": [
+      47,
+      93
+    ],
+    "transformed_parts": "isolated hand only; forearm and all hair/head/body static"
+  },
+  {
+    "frame": 1,
+    "hand_angle_deg": 2,
+    "wrist_pivot": [
+      47,
+      93
+    ],
+    "transformed_parts": "isolated hand only; forearm and all hair/head/body static"
+  },
+  {
+    "frame": 2,
+    "hand_angle_deg": 5,
+    "wrist_pivot": [
+      47,
+      93
+    ],
+    "transformed_parts": "isolated hand only; forearm and all hair/head/body static"
+  },
+  {
+    "frame": 3,
+    "hand_angle_deg": 0,
+    "wrist_pivot": [
+      47,
+      93
+    ],
+    "transformed_parts": "isolated hand only; forearm and all hair/head/body static"
+  }
+]

@@ -1,32 +1,31 @@
 {
-  "revision": "2026-09-20-barefoot-wave",
-  "sha256": "adfc6699cf53e4bcbfdc8f7e08658cbe24ab3b5062c828f9cd84a08ab6fa9958",
+  "revision": "2026-09-20-cartoon-motion",
+  "sha256": "e9135f701500d2679322f8490999d5e4063b830db9ae63a8d771756d0b3ed9fe",
   "spriteVersionNumber": 2,
   "width": 1536,
   "height": 2288,
-  "generation": "built-in image_gen masters with authorized deterministic deformation",
+  "generation": "built-in imagegen master with authorized rigid limb animation",
   "directions": 16,
   "standard_animations": 9,
   "validation": "docs/qa/installed-validation.json",
-  "visual_qa": "docs/qa/barefoot-wave-visual-qa.json",
+  "visual_qa": "docs/qa/cartoon-visual-qa.json",
   "blind_qa": "docs/qa/direction-blind-validation.json",
   "blind_summary": "docs/qa/blind-summary.json",
-  "interactive_tests": "docs/qa/barefoot-wave-browser-tests.json",
+  "interactive_tests": "docs/qa/cartoon-browser-tests.json",
   "optimization_report": "docs/optimization-2026-09-19.md",
   "retained_visual_qa": [
     "docs/qa/final-visual-qa.json",
     "docs/qa/affection-visual-qa.json"
   ],
-  "preservation": "docs/qa/barefoot-wave-preservation.json",
+  "preservation": "docs/qa/cartoon-preservation.json",
   "interaction_report": "docs/calm-affection-2026-09-19.md",
-  "chroma_despill": "docs/qa/chroma-despill-barefoot-wave.json",
-  "geometry": "docs/qa/barefoot-wave-geometry.json",
-  "current_report": "docs/barefoot-wave-2026-09-20.md",
+  "chroma_despill": "docs/qa/chroma-despill-cartoon.json",
+  "geometry": "docs/qa/cartoon-geometry.json",
+  "current_report": "docs/cartoon-motion-2026-09-20.md",
   "known_issues": [],
   "archived_interaction_report": "docs/interaction-2026-09-19.md",
   "minor_limitations": [
-    "左右移动第4/5帧内膝压缩偏紧，略显蹲行，正常尺寸未构成明显肢体畸变。",
-    "移动末帧220ms、其余帧120ms，循环边界保留较长停留。"
+    "宿主移动固定8帧，末帧220ms，其余120ms；原生实时加载未自动验证。"
   ],
   "rendering": "source/rig/rig.json",
   "unit_tests": {
@@ -36,11 +35,12 @@
   },
   "browser_test_runner": "tools/test_preview.cjs",
   "character_spec": "docs/character-spec.md",
-  "motion_tests": "docs/qa/barefoot-wave-motion-tests.json",
+  "motion_tests": "docs/qa/cartoon-motion-tests.json",
   "wave_trigger": "docs/qa/wave-trigger.json",
   "barefoot_used_cells": 74,
   "native_desktop_live_tested": false,
-  "direction_semantics_scope": "Existing blind evidence applies to unchanged head/face/upper-body; new feet independently rechecked.",
-  "installation": "docs/qa/barefoot-wave-installation.json",
-  "published_preview": "docs/qa/barefoot-wave-published-preview.json"
+  "direction_semantics_scope": "Exact head/upper-body pixels preserved before cleanup with uniform8px translation; lower-body contours reviewed afresh.",
+  "installation": "docs/qa/cartoon-installation.json",
+  "published_preview": "docs/qa/cartoon-published-preview.json",
+  "repair_decisions": "docs/qa/cartoon-repair-decisions.json"
 }

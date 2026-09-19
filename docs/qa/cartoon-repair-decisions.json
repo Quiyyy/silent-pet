@@ -1,0 +1,19 @@
+{
+  "previous_release_reclassified": {
+    "sha256": "adfc6699cf53e4bcbfdc8f7e08658cbe24ab3b5062c828f9cd84a08ab6fa9958",
+    "severity": "major",
+    "issues": [
+      "Long muscular legs and S-shaped knee/ankle deformation",
+      "Waving accidentally deforms left horn and upper hair"
+    ],
+    "decision": "replace"
+  },
+  "intermediate_candidate_rejected": {
+    "sha256": "365cf4da6db68fe6236ae301223eb59e5293c9a0cd20c825cf8175eb2960c556",
+    "severity": "major",
+    "issue": "Warm cloak fragments entered leg contour mapping and made V-shaped notches in gaze row9",
+    "decision": "fixed before installation; isolate connected leg before mapping"
+  },
+  "accepted_sha256": "e9135f701500d2679322f8490999d5e4063b830db9ae63a8d771756d0b3ed9fe",
+  "remaining_continuity_warnings": "Visually reviewed as intended negative space, not new interior holes"
+}
