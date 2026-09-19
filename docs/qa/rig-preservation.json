@@ -1,0 +1,10 @@
+{
+  "changed_states": [
+    "running-right",
+    "running-left"
+  ],
+  "outside_changed_used_cells_identical_rgba": true,
+  "neutral_and_all_16_gaze_cells_identical": true,
+  "previous_sha256": "8d80bacfcb664f06d83453f2dc45bfbb23251fe0a7de7d2e011900efbe2bca31",
+  "sha256": "5218cf19cc057f2abd7c204b8b9fb4171152821efb0e08b7e1732b20a25c6d22"
+}

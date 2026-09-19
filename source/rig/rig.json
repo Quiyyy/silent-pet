@@ -1,0 +1,30 @@
+{
+  "method": "User-authorized layered rig with two-bone inverse kinematics",
+  "authorization_date": "2026-09-20",
+  "master": "source/rig/master.png",
+  "master_origin": "First complete foreground pose extracted from an earlier generated right-facing strip; its original multi-frame gait was not accepted.",
+  "master_sha256": "79d975aea33bc367344641dc44e22ec1cb4da7640c15ae3927fa9f8039dc2f33",
+  "render_tool": "tools/render_gait.py",
+  "test_tool": "tools/test_gait.py",
+  "frame_count": 8,
+  "frame_durations_ms": [
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    220
+  ],
+  "torso_rotation_degrees": 0,
+  "torso_bob_max_px": 0.35,
+  "stride_half_extent_px": 12,
+  "max_swing_lift_px": 4,
+  "far_leg_brightness": 0.8,
+  "layer_order": [
+    "far leg",
+    "near leg",
+    "stable body and hip-wrap foreground"
+  ]
+}

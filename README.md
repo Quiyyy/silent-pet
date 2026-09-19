@@ -71,7 +71,7 @@ docs/                    制作说明与验收记录
 - 三个隔离审查代理完成随机 A/B 方向盲测，四主方向通过。
 - 独立视觉审查检查了正常尺寸逐帧顺序与闭环；未宣称在桌面应用中实时播放验收。
 
-完整记录见 [验收摘要](docs/artifact.json)、[本轮亲近视觉检查](docs/qa/held-hover-visual-qa.json) 和 [制作说明](docs/production.md)。
+完整记录见 [验收摘要](docs/artifact.json)、[本轮步态视觉检查](docs/qa/rig-visual-qa.json) 和 [制作说明](docs/production.md)。
 
 ## 2026-09-19 动作与方向优化（前一版）
 
@@ -83,11 +83,19 @@ docs/                    制作说明与验收记录
 
 详细结果与限制见[本轮验收报告](docs/optimization-2026-09-19.md)。宿主桌面客户端的实时鼠标操作未自动测试，浏览器预览验收单独记录。
 
-## 舒缓亲近版（当前）
+## 直立分层步态版（当前）
+
+左右移动已改用分层骨骼动画：上半身直立，双腿沿连续轨迹交替落脚，保持前后遮挡和关节连接。小幅增加步幅，并保留极轻上下起伏。
+
+原有舒缓亲近、其它动作与16方向逐像素保留。骨骼检查、独立视觉审核及独立无界面Chrome实际输入回归通过。
+
+[制作与验收](docs/layered-gait-2026-09-20.md) · [移动新旧对照](previews/rig/comparison-running-right.jpg) · [移动循环](previews/rig/transition-drag.gif)
+
+## 舒缓亲近修复（已保留）
 
 亲近五帧改为持续半眯眼和微笑，只有极轻微呼吸；原生客户端840ms循环不变，避免每轮快速闭眼、睁眼和点头。浏览器互动体验的一次回应延长至2.4秒，悬停触发500ms，冷却4秒。
 
-**左右步态仍待修复。** 用户指出前倾和腿部不连贯，旧视觉通过结论已被该反馈取代。本轮生成候选未通过，不安装；[分层制作方案](docs/layered-gait-proposal.md)等待用户选择。
+此前用户指出的左右步态前倾与不连贯问题，已在上面的直立分层步态版本中修复。失败生成候选未安装；[分层制作方案](docs/layered-gait-proposal.md)已获授权并实施。
 
 [本轮说明](docs/calm-affection-2026-09-19.md) · [亲近对照](previews/calm-affection/comparison.jpg)
 

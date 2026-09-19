@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "trajectory_samples": 1001,
+  "no_flight": true,
+  "ik_bone_lengths_preserved": true,
+  "max_ankle_lift_px": 4,
+  "cyclic_path_continuous": true,
+  "upper_body_rotation_degrees": 0,
+  "upper_body_scale": 1,
+  "upper_body_vertical_bob_max_px": 0.35,
+  "all_rendered_anatomical_parts_connected": true,
+  "left_exact_mirror": true,
+  "native_frame_durations_ms": [
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    220
+  ]
+}

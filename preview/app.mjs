@@ -222,12 +222,12 @@ $('zoom').addEventListener('change', () => {
 });
 image.onload = () => {
   if (image.naturalWidth !== 1536 || image.naturalHeight !== 2288) { $('asset-status').textContent = '图集尺寸错误：需要1536×2288'; return; }
-  ready = true; $('asset-status').textContent = '舒缓亲近版 · v2 · 9组动作 / 16方向' + (requested ? ' · 候选版本' : '');
+  ready = true; $('asset-status').textContent = '直立步态版 · v2 · 9组动作 / 16方向' + (requested ? ' · 候选版本' : '');
   paint();
 };
 image.onerror = () => { $('asset-status').textContent = '图集未能读取，请从仓库根目录启动本地HTTP服务。'; };
 const requested = new URLSearchParams(location.search).get('atlas');
-image.src = requested && !requested.startsWith('/') && /^[a-zA-Z0-9_./-]+$/.test(requested) ? requested : '../spritesheet.webp?v=calm-8d80bacfcb66';
+image.src = requested && !requested.startsWith('/') && /^[a-zA-Z0-9_./-]+$/.test(requested) ? requested : '../spritesheet.webp?v=rig-5218cf19cc05';
 function tick(now) {
   if (mode === 'interactive') paint(now);
   else if (last && playing) { elapsed += Math.min(now - last, 250) * speed; paint(now); }

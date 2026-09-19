@@ -1,8 +1,8 @@
 export const CELL = Object.freeze({ width: 192, height: 208, columns: 8, rows: 11 });
 export const STATES = Object.freeze({
   idle: { label: '警觉待机', row: 0, durations: [280,110,110,140,140,320] },
-  'running-right': { label: '向右轻步', row: 1, durations: [120,120,120,120,120,120,120,220] },
-  'running-left': { label: '向左轻步', row: 2, durations: [120,120,120,120,120,120,120,220] },
+  'running-right': { label: '向右移动', row: 1, durations: [120,120,120,120,120,120,120,220] },
+  'running-left': { label: '向左移动', row: 2, durations: [120,120,120,120,120,120,120,220] },
   waving: { label: '招手', row: 3, durations: [140,140,140,280] },
   jumping: { label: '亲近回应', row: 4, durations: [140,140,140,140,280] },
   failed: { label: '失落', row: 5, durations: [140,140,140,140,140,140,140,240] },

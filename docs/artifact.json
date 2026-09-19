@@ -1,6 +1,6 @@
 {
-  "revision": "2026-09-19-calm-affection",
-  "sha256": "8d80bacfcb664f06d83453f2dc45bfbb23251fe0a7de7d2e011900efbe2bca31",
+  "revision": "2026-09-20-layered-gait",
+  "sha256": "5218cf19cc057f2abd7c204b8b9fb4171152821efb0e08b7e1732b20a25c6d22",
   "spriteVersionNumber": 2,
   "width": 1536,
   "height": 2288,
@@ -8,31 +8,31 @@
   "directions": 16,
   "standard_animations": 9,
   "validation": "docs/qa/installed-validation.json",
-  "visual_qa": "docs/qa/held-hover-visual-qa.json",
+  "visual_qa": "docs/qa/rig-visual-qa.json",
   "blind_qa": "docs/qa/direction-blind-validation.json",
   "blind_summary": "docs/qa/blind-summary.json",
-  "interactive_tests": "docs/qa/calm-affection-tests.json",
+  "interactive_tests": "docs/qa/rig-browser-tests.json",
   "optimization_report": "docs/optimization-2026-09-19.md",
   "retained_visual_qa": [
     "docs/qa/final-visual-qa.json",
     "docs/qa/affection-visual-qa.json"
   ],
-  "preservation": "docs/qa/held-hover-preservation.json",
+  "preservation": "docs/qa/rig-preservation.json",
   "interaction_report": "docs/calm-affection-2026-09-19.md",
-  "chroma_despill": "docs/qa/chroma-despill-held-hover.json",
-  "geometry": "docs/qa/huntress-geometry.json",
-  "current_report": "docs/calm-affection-2026-09-19.md",
-  "known_issues": [
-    {
-      "states": [
-        "running-right",
-        "running-left"
-      ],
-      "status": "user-reported-unresolved",
-      "reason": "User rejected forward posture and discontinuous leg movement. Earlier gait QA pass is superseded.",
-      "next_action": "Await explicit choice of layered programmatic animation; rejected generated rows were not installed.",
-      "proposal": "docs/layered-gait-proposal.md"
-    }
+  "chroma_despill": "docs/qa/chroma-despill-rig.json",
+  "geometry": "docs/qa/rig-geometry.json",
+  "current_report": "docs/layered-gait-2026-09-20.md",
+  "known_issues": [],
+  "archived_interaction_report": "docs/interaction-2026-09-19.md",
+  "minor_limitations": [
+    "交叉帧仍有较多双靴重叠，整体读作轻缓的小步移动。",
+    "末帧保留220ms，仍有轻微停拍的可能；没有悬空硬伤。"
   ],
-  "archived_interaction_report": "docs/interaction-2026-09-19.md"
+  "rendering": "source/rig/rig.json",
+  "unit_tests": {
+    "command": "npm test",
+    "passed": 17,
+    "failed": 0
+  },
+  "browser_test_runner": "tools/test_preview.cjs"
 }
