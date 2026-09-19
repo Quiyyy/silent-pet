@@ -121,6 +121,9 @@ function paint(now = performance.now()) {
     const status = labels[a.kind] + (a.cooldownMs > 0 && a.kind !== 'affection' ? ' · 稍后再亲近' : '');
     if ($('interaction-status').textContent !== status) $('interaction-status').textContent = status;
   }
+  if (mode !== 'interactive') $('hint').textContent = a.state === 'waving'
+    ? '桌面端招手对应首次唤醒问候（约 8 秒），同一宠物通常不重复；此处可手动循环检查。'
+    : '点击下方缩略帧可暂停定位。基线用于检查脚底与角色大小。';
   filmstrip(a);
 }
 function step(delta) {
@@ -222,12 +225,12 @@ $('zoom').addEventListener('change', () => {
 });
 image.onload = () => {
   if (image.naturalWidth !== 1536 || image.naturalHeight !== 2288) { $('asset-status').textContent = '图集尺寸错误：需要1536×2288'; return; }
-  ready = true; $('asset-status').textContent = '直立步态版 · v2 · 9组动作 / 16方向' + (requested ? ' · 候选版本' : '');
+  ready = true; $('asset-status').textContent = '赤脚与招手修复版 · v2 · 9组动作 / 16方向' + (requested ? ' · 候选版本' : '');
   paint();
 };
 image.onerror = () => { $('asset-status').textContent = '图集未能读取，请从仓库根目录启动本地HTTP服务。'; };
 const requested = new URLSearchParams(location.search).get('atlas');
-image.src = requested && !requested.startsWith('/') && /^[a-zA-Z0-9_./-]+$/.test(requested) ? requested : '../spritesheet.webp?v=rig-5218cf19cc05';
+image.src = requested && !requested.startsWith('/') && /^[a-zA-Z0-9_./-]+$/.test(requested) ? requested : '../spritesheet.webp?v=barefoot-adfc6699cf53';
 function tick(now) {
   if (mode === 'interactive') paint(now);
   else if (last && playing) { elapsed += Math.min(now - last, 250) * speed; paint(now); }

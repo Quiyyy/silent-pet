@@ -1,9 +1,12 @@
 {
-  "method": "User-authorized layered rig with two-bone inverse kinematics",
+  "revision": "2026-09-20-barefoot-wave",
+  "method": "User-authorized continuous skin deformation with two-bone inverse kinematics",
   "authorization_date": "2026-09-20",
   "master": "source/rig/master.png",
-  "master_origin": "First complete foreground pose extracted from an earlier generated right-facing strip; its original multi-frame gait was not accepted.",
-  "master_sha256": "79d975aea33bc367344641dc44e22ec1cb4da7640c15ae3927fa9f8039dc2f33",
+  "master_origin": "New image_gen barefoot upright master, normalized without changing anatomy.",
+  "master_sha256": "2b8c23299ce2f62916c6be1b88f386b0701e3a32e8c124535ba3bb1cda27f281",
+  "wave_master": "source/wave/master.png",
+  "wave_master_sha256": "ed7936d45b93e595cb9a963d1f25d81906b0eff3cb351d3e03987b89487b6a24",
   "render_tool": "tools/render_gait.py",
   "test_tool": "tools/test_gait.py",
   "frame_count": 8,
@@ -17,14 +20,40 @@
     120,
     220
   ],
-  "torso_rotation_degrees": 0,
-  "torso_bob_max_px": 0.35,
-  "stride_half_extent_px": 12,
-  "max_swing_lift_px": 4,
-  "far_leg_brightness": 0.8,
-  "layer_order": [
-    "far leg",
-    "near leg",
-    "stable body and hip-wrap foreground"
-  ]
+  "torso_rotation_max_degrees": 0.45,
+  "torso_bob_max_px": 0.8,
+  "torso_sway_max_px": 0.65,
+  "stride_half_extent_px": 14,
+  "max_swing_lift_px": 5,
+  "stance_fraction": 0.62,
+  "bone_lengths_px": [
+    21.3,
+    22.2
+  ],
+  "ground_y": 201,
+  "phase_offset": 0.08,
+  "foot_roll_degrees": [
+    -6,
+    11
+  ],
+  "contact": "Foot convex hull determines ankle height at the common ground plane.",
+  "deformation": "Continuous knee and ankle skin mesh; each rendered triangle has positive Jacobian.",
+  "cloth_follow_max_px": [
+    0.9,
+    0.35
+  ],
+  "wave_angles_degrees": [
+    -5,
+    3,
+    8,
+    0
+  ],
+  "wave_frame_durations_ms": [
+    140,
+    140,
+    140,
+    280
+  ],
+  "wave_topology": "Exactly two arms and hands. Existing character-right/viewer-left arm waves; other hand supports scroll.",
+  "standing_and_gaze_feet": "54 additional cells corrected with shared barefoot reference; all 74 used cells barefoot."
 }

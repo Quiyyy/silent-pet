@@ -27,6 +27,11 @@ const url=process.env.PREVIEW_URL||'http://127.0.0.1:8768/preview/';
   const states=['idle','running-right','running-left','waving','jumping','failed','waiting','running','review'];
   for(let i=0;i<states.length;i++){await page.locator('#states button').nth(i).click();assert.equal((await state()).state,states[i]);}
   report.checks.all_nine_state_buttons=true;
+  await page.locator('#states button').nth(3).click();
+  assert((await page.locator('#hint').innerText()).includes('首次唤醒'));
+  const wave=await sample(950);assert.equal(new Set(wave.map(x=>x.frame)).size,4);
+  await page.screenshot({path:path.join(root,'qa/browser-wave.png')});
+  report.checks.wave_four_frames_and_trigger_hint=true;
   for(let i=0;i<16;i++){await page.locator('#directions button').nth(i).click();assert.equal((await state()).frame,String(i));}
   report.checks.all_sixteen_directions=true;
   await page.locator('#states button').nth(1).click();

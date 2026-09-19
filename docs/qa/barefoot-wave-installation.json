@@ -1,0 +1,8 @@
+{
+  "ok": true,
+  "previous_sha256": "5218cf19cc057f2abd7c204b8b9fb4171152821efb0e08b7e1732b20a25c6d22",
+  "installed_sha256": "adfc6699cf53e4bcbfdc8f7e08658cbe24ab3b5062c828f9cd84a08ab6fa9958",
+  "repository_sha256": "adfc6699cf53e4bcbfdc8f7e08658cbe24ab3b5062c828f9cd84a08ab6fa9958",
+  "manifest_unchanged": true,
+  "native_live_reload_verified": false
+}

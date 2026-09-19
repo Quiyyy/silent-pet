@@ -1,0 +1,38 @@
+[
+  {
+    "frame": 0,
+    "hand_angle_deg": -5,
+    "wrist_pivot": [
+      49,
+      91
+    ],
+    "changed_region": "viewer-left hand/forearm and neighboring flexible hair only; face and holding arm unchanged"
+  },
+  {
+    "frame": 1,
+    "hand_angle_deg": 3,
+    "wrist_pivot": [
+      49,
+      91
+    ],
+    "changed_region": "viewer-left hand/forearm and neighboring flexible hair only; face and holding arm unchanged"
+  },
+  {
+    "frame": 2,
+    "hand_angle_deg": 8,
+    "wrist_pivot": [
+      49,
+      91
+    ],
+    "changed_region": "viewer-left hand/forearm and neighboring flexible hair only; face and holding arm unchanged"
+  },
+  {
+    "frame": 3,
+    "hand_angle_deg": 0,
+    "wrist_pivot": [
+      49,
+      91
+    ],
+    "changed_region": "viewer-left hand/forearm and neighboring flexible hair only; face and holding arm unchanged"
+  }
+]

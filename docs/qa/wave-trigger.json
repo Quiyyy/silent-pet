@@ -1,0 +1,10 @@
+{
+  "app_version": "26.915.4065.0",
+  "evidence": "Local static inspection",
+  "native_trigger": "first-awake greeting notification",
+  "greeting_expiry_ms": 8000,
+  "deduplicated_per_avatar_id": true,
+  "hover_state": "jumping",
+  "preview_wave": "manual state selection",
+  "runtime_tested": false
+}

@@ -1,6 +1,6 @@
 # silent pet
 
-一个安静的 Codex v2 桌面宠物项目。当前角色名称为 **猎豹**：白发、骨角、绿披风，手持卷轴。
+一个安静的 Codex v2 桌面宠物项目。当前角色名称为 **猎豹**：白发、骨角、绿披风，赤脚、手持卷轴。
 
 包含九组状态动画、16 个顺时针视线方向及独立默认姿势，重点改善动作循环、裁帧造成的尺寸跳动和方向切换。
 
@@ -30,7 +30,9 @@ pet.json                  可安装的宠物配置
 spritesheet.webp          完成验证的 v2 图集
 atlas.json                图集布局及状态描述
 previews/                 九组动作、方向循环和图集预览
-source/rows/              选定的原始生成条带
+source/preclean/          当前已批准的未清理图集
+source/current-rows/      当前注册好的11行
+source/rows/              历史生成条带
 source/reference.png      原角色身份参考
 source/look-anchors.png   已批准的四主方向
 source/layout-guides/     生成时使用的布局参考
@@ -71,7 +73,7 @@ docs/                    制作说明与验收记录
 - 三个隔离审查代理完成随机 A/B 方向盲测，四主方向通过。
 - 独立视觉审查检查了正常尺寸逐帧顺序与闭环；未宣称在桌面应用中实时播放验收。
 
-完整记录见 [验收摘要](docs/artifact.json)、[本轮步态视觉检查](docs/qa/rig-visual-qa.json) 和 [制作说明](docs/production.md)。
+完整记录见 [验收摘要](docs/artifact.json)、[本轮视觉检查](docs/qa/barefoot-wave-visual-qa.json) 和 [制作说明](docs/production.md)。
 
 ## 2026-09-19 动作与方向优化（前一版）
 
@@ -83,19 +85,31 @@ docs/                    制作说明与验收记录
 
 详细结果与限制见[本轮验收报告](docs/optimization-2026-09-19.md)。宿主桌面客户端的实时鼠标操作未自动测试，浏览器预览验收单独记录。
 
-## 直立分层步态版（当前）
+## 赤脚与招手修复（当前）
 
-左右移动已改用分层骨骼动画：上半身直立，双腿沿连续轨迹交替落脚，保持前后遮挡和关节连接。小幅增加步幅，并保留极轻上下起伏。
+- 招手改为原有右臂抬起，另一只手托住卷轴；修正多余手臂和手掌过小的问题。
+- 所有74个有效姿态统一赤脚，待机、移动、招手和视线之间不再突然出现鞋子。
+- 左右移动采用连续腿部变形、足底接触与脚掌滚动，身体和披风轻微跟随换步，保持直立。
 
-原有舒缓亲近、其它动作与16方向逐像素保留。骨骼检查、独立视觉审核及独立无界面Chrome实际输入回归通过。
+结构检查、1001相位运动检查、独立视觉检查、17项逻辑测试和11项浏览器交互回归通过。原生桌面实时播放未自动验收；移动内膝在第4/5帧仍略紧，宿主末帧220ms的节奏保持不变。
 
-[制作与验收](docs/layered-gait-2026-09-20.md) · [移动新旧对照](previews/rig/comparison-running-right.jpg) · [移动循环](previews/rig/transition-drag.gif)
+<p>
+  <img src="previews/waving.gif" alt="修复后的两臂招手" width="192" height="208">
+  <img src="previews/running-right.gif" alt="赤脚向右移动" width="192" height="208">
+  <img src="previews/running-left.gif" alt="赤脚向左移动" width="192" height="208">
+</p>
+
+[制作与验收](docs/barefoot-wave-2026-09-20.md) · [角色约束](docs/character-spec.md) · [招手对照](previews/barefoot/comparison-waving.jpg) · [移动对照](previews/barefoot/comparison-running-right.jpg) · [状态切换](previews/transition-drag.gif)
+
+### 招手什么时候出现
+
+当前Codex客户端将“首次唤醒问候”映射到招手，问候窗口约8秒，并按宠物ID去重，因此同一宠物通常不会反复招手。普通鼠标悬停是亲近回应；拖动或其它较高优先级状态可能覆盖问候。预览页的“招手”按钮可随时查看。这一结论来自客户端静态代码核对，未进行原生实时触发验收。
 
 ## 舒缓亲近修复（已保留）
 
 亲近五帧改为持续半眯眼和微笑，只有极轻微呼吸；原生客户端840ms循环不变，避免每轮快速闭眼、睁眼和点头。浏览器互动体验的一次回应延长至2.4秒，悬停触发500ms，冷却4秒。
 
-此前用户指出的左右步态前倾与不连贯问题，已在上面的直立分层步态版本中修复。失败生成候选未安装；[分层制作方案](docs/layered-gait-proposal.md)已获授权并实施。
+此前用户指出的左右步态前倾与不连贯问题，已在当前赤脚步态版本中修复。失败生成候选未安装；[分层制作方案](docs/layered-gait-proposal.md)已获授权并实施。
 
 [本轮说明](docs/calm-affection-2026-09-19.md) · [亲近对照](previews/calm-affection/comparison.jpg)
 

@@ -1,0 +1,14 @@
+{
+  "full_rows_rebuilt": [
+    "running-right",
+    "running-left",
+    "waving"
+  ],
+  "foot_only_corrected_cells": 54,
+  "other_cells_upper_y0_to164_identical_rgba": true,
+  "all_16_gaze_and_neutral_upper_y0_to164_identical_rgba": true,
+  "barefoot_identity_applies_to_all_74_used_cells": true,
+  "prior_direction_semantic_evidence": "Inherited for exact unchanged head/face/upper-body regions; foot continuity reviewed afresh.",
+  "previous_sha256": "5218cf19cc057f2abd7c204b8b9fb4171152821efb0e08b7e1732b20a25c6d22",
+  "sha256": "adfc6699cf53e4bcbfdc8f7e08658cbe24ab3b5062c828f9cd84a08ab6fa9958"
+}

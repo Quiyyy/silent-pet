@@ -1,0 +1,13 @@
+{
+  "ok": true,
+  "trajectory_samples": 1001,
+  "no_flight": true,
+  "bone_lengths_preserved": true,
+  "bare_foot_contact_plane_verified": true,
+  "cyclic_path_continuous": true,
+  "rendered_skin_mesh_min_jacobian": 0.08518031333386684,
+  "no_folded_rendered_skin_triangles": true,
+  "left_right_phase_mirrored": true,
+  "wave_face_pixels_unchanged": true,
+  "wave_feet_pixels_unchanged": true
+}

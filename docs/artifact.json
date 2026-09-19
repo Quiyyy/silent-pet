@@ -1,32 +1,32 @@
 {
-  "revision": "2026-09-20-layered-gait",
-  "sha256": "5218cf19cc057f2abd7c204b8b9fb4171152821efb0e08b7e1732b20a25c6d22",
+  "revision": "2026-09-20-barefoot-wave",
+  "sha256": "adfc6699cf53e4bcbfdc8f7e08658cbe24ab3b5062c828f9cd84a08ab6fa9958",
   "spriteVersionNumber": 2,
   "width": 1536,
   "height": 2288,
-  "generation": "built-in image_gen",
+  "generation": "built-in image_gen masters with authorized deterministic deformation",
   "directions": 16,
   "standard_animations": 9,
   "validation": "docs/qa/installed-validation.json",
-  "visual_qa": "docs/qa/rig-visual-qa.json",
+  "visual_qa": "docs/qa/barefoot-wave-visual-qa.json",
   "blind_qa": "docs/qa/direction-blind-validation.json",
   "blind_summary": "docs/qa/blind-summary.json",
-  "interactive_tests": "docs/qa/rig-browser-tests.json",
+  "interactive_tests": "docs/qa/barefoot-wave-browser-tests.json",
   "optimization_report": "docs/optimization-2026-09-19.md",
   "retained_visual_qa": [
     "docs/qa/final-visual-qa.json",
     "docs/qa/affection-visual-qa.json"
   ],
-  "preservation": "docs/qa/rig-preservation.json",
+  "preservation": "docs/qa/barefoot-wave-preservation.json",
   "interaction_report": "docs/calm-affection-2026-09-19.md",
-  "chroma_despill": "docs/qa/chroma-despill-rig.json",
-  "geometry": "docs/qa/rig-geometry.json",
-  "current_report": "docs/layered-gait-2026-09-20.md",
+  "chroma_despill": "docs/qa/chroma-despill-barefoot-wave.json",
+  "geometry": "docs/qa/barefoot-wave-geometry.json",
+  "current_report": "docs/barefoot-wave-2026-09-20.md",
   "known_issues": [],
   "archived_interaction_report": "docs/interaction-2026-09-19.md",
   "minor_limitations": [
-    "交叉帧仍有较多双靴重叠，整体读作轻缓的小步移动。",
-    "末帧保留220ms，仍有轻微停拍的可能；没有悬空硬伤。"
+    "左右移动第4/5帧内膝压缩偏紧，略显蹲行，正常尺寸未构成明显肢体畸变。",
+    "移动末帧220ms、其余帧120ms，循环边界保留较长停留。"
   ],
   "rendering": "source/rig/rig.json",
   "unit_tests": {
@@ -34,5 +34,13 @@
     "passed": 17,
     "failed": 0
   },
-  "browser_test_runner": "tools/test_preview.cjs"
+  "browser_test_runner": "tools/test_preview.cjs",
+  "character_spec": "docs/character-spec.md",
+  "motion_tests": "docs/qa/barefoot-wave-motion-tests.json",
+  "wave_trigger": "docs/qa/wave-trigger.json",
+  "barefoot_used_cells": 74,
+  "native_desktop_live_tested": false,
+  "direction_semantics_scope": "Existing blind evidence applies to unchanged head/face/upper-body; new feet independently rechecked.",
+  "installation": "docs/qa/barefoot-wave-installation.json",
+  "published_preview": "docs/qa/barefoot-wave-published-preview.json"
 }

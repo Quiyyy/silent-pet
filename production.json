@@ -1,20 +1,22 @@
 {
-  "generator": "Built-in image_gen source art; user-authorized deterministic layered gait renderer",
+  "generator": "Built-in image_gen masters; user-authorized continuous skin animation and deterministic foot correction",
   "identity_reference": "source/reference.png",
   "cardinal_anchors": "source/look-anchors.png",
   "rows": [
     {
       "state": "failed",
-      "source": "source/rows/failed.png",
-      "prompt": "prompts/rows/failed.md",
-      "layout_guide": "source/layout-guides/failed.png"
+      "layout_guide": "source/layout-guides/failed.png",
+      "historical_source": "source/rows/failed.png",
+      "historical_prompt": "prompts/rows/failed.md",
+      "source": "source/current-rows/failed.png",
+      "revision": "2026-09-20-barefoot-wave",
+      "current_source_kind": "Registered 192x208 cells from the approved preclean atlas",
+      "change": "Barefoot lower-leg correction; head/face/upper-body preserved."
     },
     {
       "state": "idle",
-      "source": "source/rows/idle.png",
-      "prompt": "prompts/rows/idle.md",
       "layout_guide": "source/layout-guides/idle.png",
-      "revision": "2026-09-19-huntress",
+      "revision": "2026-09-20-barefoot-wave",
       "extraction": "stable-slots; component/source-edge and final visual QA passed",
       "input_images": [
         "https://raw.githubusercontent.com/Quiyyy/silent-pet/c6f202f10860488b22915c2d97c82df6979c0148/source/reference.png",
@@ -24,94 +26,167 @@
       "source_background": "transparent RGBA",
       "attempts": 2,
       "selected_attempt": 2,
-      "earlier_prompt": "prompts/attempts/huntress-idle-first.md"
+      "earlier_prompt": "prompts/attempts/huntress-idle-first.md",
+      "historical_source": "source/rows/idle.png",
+      "historical_prompt": "prompts/rows/idle.md",
+      "source": "source/current-rows/idle.png",
+      "current_source_kind": "Registered 192x208 cells from the approved preclean atlas",
+      "change": "Barefoot lower-leg correction; head/face/upper-body preserved."
     },
     {
       "state": "jumping",
-      "source": "source/rows/jumping.png",
-      "prompt": "prompts/rows/jumping.md",
       "layout_guide": "source/layout-guides/jumping.png",
       "meaning": "Held gentle half-closed eyes and small smile with minimal breathing; no rapid open-close blink or nod loop.",
-      "revision": "2026-09-19-calm-affection",
+      "revision": "2026-09-20-barefoot-wave",
       "input_images": [
         "https://raw.githubusercontent.com/Quiyyy/silent-pet/52ec3d705a5584134de7ee0bbb2397a1315795f3/source/reference.png",
         "https://raw.githubusercontent.com/Quiyyy/silent-pet/52ec3d705a5584134de7ee0bbb2397a1315795f3/source/layout-guides/jumping.png",
         "https://raw.githubusercontent.com/Quiyyy/silent-pet/52ec3d705a5584134de7ee0bbb2397a1315795f3/source/look-anchors.png"
       ],
       "source_background": "transparent RGBA",
-      "extraction": "stable-slots; source component check and independent final visual QA passed"
+      "extraction": "stable-slots; source component check and independent final visual QA passed",
+      "historical_source": "source/rows/jumping.png",
+      "historical_prompt": "prompts/rows/jumping.md",
+      "source": "source/current-rows/jumping.png",
+      "current_source_kind": "Registered 192x208 cells from the approved preclean atlas",
+      "change": "Barefoot lower-leg correction; head/face/upper-body preserved."
     },
     {
       "state": "look-row-10",
-      "source": "source/rows/look-row-10.png",
-      "prompt": "prompts/rows/look-row-10.md",
-      "layout_guide": "source/layout-guides/look-row-10.png"
+      "layout_guide": "source/layout-guides/look-row-10.png",
+      "historical_source": "source/rows/look-row-10.png",
+      "historical_prompt": "prompts/rows/look-row-10.md",
+      "source": "source/current-rows/look-row-10.png",
+      "revision": "2026-09-20-barefoot-wave",
+      "current_source_kind": "Registered 192x208 cells from the approved preclean atlas",
+      "change": "Barefoot lower-leg correction; head/face/upper-body preserved."
     },
     {
       "state": "look-row-9",
-      "source": "source/rows/look-row-9.png",
-      "prompt": "prompts/rows/look-row-9.md",
-      "layout_guide": "source/layout-guides/look-row-9.png"
+      "layout_guide": "source/layout-guides/look-row-9.png",
+      "historical_source": "source/rows/look-row-9.png",
+      "historical_prompt": "prompts/rows/look-row-9.md",
+      "source": "source/current-rows/look-row-9.png",
+      "revision": "2026-09-20-barefoot-wave",
+      "current_source_kind": "Registered 192x208 cells from the approved preclean atlas",
+      "change": "Barefoot lower-leg correction; head/face/upper-body preserved."
     },
     {
       "state": "review",
-      "source": "source/rows/review.png",
-      "prompt": "prompts/rows/review.md",
       "layout_guide": "source/layout-guides/review.png",
-      "revision": "2026-09-19-huntress",
+      "revision": "2026-09-20-barefoot-wave",
       "extraction": "stable-slots; component/source-edge and final visual QA passed",
       "input_images": [
         "https://raw.githubusercontent.com/Quiyyy/silent-pet/c6f202f10860488b22915c2d97c82df6979c0148/source/reference.png",
         "https://raw.githubusercontent.com/Quiyyy/silent-pet/c6f202f10860488b22915c2d97c82df6979c0148/source/layout-guides/review.png",
         "https://raw.githubusercontent.com/Quiyyy/silent-pet/c6f202f10860488b22915c2d97c82df6979c0148/source/look-anchors.png"
       ],
-      "source_background": "transparent RGBA"
+      "source_background": "transparent RGBA",
+      "historical_source": "source/rows/review.png",
+      "historical_prompt": "prompts/rows/review.md",
+      "source": "source/current-rows/review.png",
+      "current_source_kind": "Registered 192x208 cells from the approved preclean atlas",
+      "change": "Barefoot lower-leg correction; head/face/upper-body preserved."
     },
     {
       "state": "running-left",
-      "revision": "2026-09-20-layered-gait",
-      "source": "source/rig/master.png",
-      "frame_strip": "source/rows/running-left.png",
-      "method": "framewise-mirror-of-rig",
+      "revision": "2026-09-20-barefoot-wave",
+      "method": "framewise-mirror-of-continuous-skin-rig",
       "renderer": "tools/render_gait.py",
       "rig": "source/rig/rig.json",
-      "user_authorized": true
+      "user_authorized": true,
+      "historical_source": "https://raw.githubusercontent.com/Quiyyy/silent-pet/3e1233526e4cc8053f9ecafad1980644fe688e49/source/rig/master.png",
+      "source": "source/current-rows/running-left.png",
+      "current_source_kind": "Registered 192x208 cells from the approved preclean atlas"
     },
     {
       "state": "running-right",
-      "revision": "2026-09-20-layered-gait",
-      "source": "source/rig/master.png",
-      "frame_strip": "source/rows/running-right.png",
-      "method": "layered-rig",
+      "revision": "2026-09-20-barefoot-wave",
+      "method": "local-continuous-skin-deformation",
       "renderer": "tools/render_gait.py",
       "rig": "source/rig/rig.json",
-      "user_authorized": true
+      "user_authorized": true,
+      "historical_source": "https://raw.githubusercontent.com/Quiyyy/silent-pet/3e1233526e4cc8053f9ecafad1980644fe688e49/source/rig/master.png",
+      "source": "source/current-rows/running-right.png",
+      "current_source_kind": "Registered 192x208 cells from the approved preclean atlas"
     },
     {
       "state": "running",
-      "source": "source/rows/running.png",
-      "prompt": "prompts/rows/running.md",
-      "layout_guide": "source/layout-guides/running.png"
+      "layout_guide": "source/layout-guides/running.png",
+      "historical_source": "source/rows/running.png",
+      "historical_prompt": "prompts/rows/running.md",
+      "source": "source/current-rows/running.png",
+      "revision": "2026-09-20-barefoot-wave",
+      "current_source_kind": "Registered 192x208 cells from the approved preclean atlas",
+      "change": "Barefoot lower-leg correction; head/face/upper-body preserved."
     },
     {
       "state": "waiting",
-      "source": "source/rows/waiting.png",
-      "prompt": "prompts/rows/waiting.md",
-      "layout_guide": "source/layout-guides/waiting.png"
+      "layout_guide": "source/layout-guides/waiting.png",
+      "historical_source": "source/rows/waiting.png",
+      "historical_prompt": "prompts/rows/waiting.md",
+      "source": "source/current-rows/waiting.png",
+      "revision": "2026-09-20-barefoot-wave",
+      "current_source_kind": "Registered 192x208 cells from the approved preclean atlas",
+      "change": "Barefoot lower-leg correction; head/face/upper-body preserved."
     },
     {
       "state": "waving",
-      "source": "source/rows/waving.png",
-      "prompt": "prompts/rows/waving.md",
-      "layout_guide": "source/layout-guides/waving.png"
+      "layout_guide": "source/layout-guides/waving.png",
+      "historical_source": "source/rows/waving.png",
+      "historical_prompt": "prompts/rows/waving.md",
+      "source": "source/current-rows/waving.png",
+      "revision": "2026-09-20-barefoot-wave",
+      "current_source_kind": "Registered 192x208 cells from the approved preclean atlas",
+      "method": "local-continuous-skin-deformation",
+      "renderer": "tools/render_gait.py",
+      "rig": "source/rig/rig.json",
+      "user_authorized": true
     }
   ],
   "final": "spritesheet.webp",
   "final_constraints": "docs/production.md",
-  "revision": "2026-09-20-layered-gait",
+  "revision": "2026-09-20-barefoot-wave",
   "look_down_anchor": "source/look-down-anchor.png",
   "optimized_rows": [
     "running-right",
-    "running-left"
+    "running-left",
+    "waving"
+  ],
+  "character_spec": "source/character-spec.json",
+  "authoritative_preclean_atlas": "source/preclean/spritesheet.png",
+  "preclean_sha256": "5234555c8f5c43194b53dd1fdaa42aeaae8f76a36fac2091cc2a96283a342c2b",
+  "source_warning": "Earlier generated strips/prompts are historical, including mistaken boots/gloves descriptions. Use character-spec and current preclean atlas for future edits.",
+  "foot_corrected_other_cells": 54,
+  "masters": [
+    {
+      "state": "running-right",
+      "generated": "source/masters/walk-generated.png",
+      "selected_crop": "source/rig/master.png",
+      "prompt": "prompts/masters/walk-master.md",
+      "input_commit": "3e1233526e4cc8053f9ecafad1980644fe688e49",
+      "input_images": [
+        "source/reference.png",
+        "source/rig/master.png"
+      ],
+      "note": "Historical rig master is camera reference only; footwear rejected."
+    },
+    {
+      "state": "waving",
+      "generated": "source/masters/wave-before-repair.png",
+      "prompt": "prompts/masters/wave-master.md",
+      "status": "Not accepted; extra hand removed in authorized topology draft."
+    },
+    {
+      "state": "waving",
+      "generated": "source/masters/wave-finished-generated.png",
+      "selected_crop": "source/wave/master.png",
+      "prompt": "prompts/masters/wave-tunic-finish.md",
+      "input_commit": "cd0f669a51e181a109a8bd5469d042b24b935f3d",
+      "input_images": [
+        "source/repairs/wave-two-arm-draft.png"
+      ],
+      "status": "Accepted after all-cell barefoot unification and independent visual QA."
+    }
   ]
 }
