@@ -71,5 +71,16 @@
     }
   ],
   "final": "spritesheet.webp",
-  "final_constraints": "docs/production.md"
+  "final_constraints": "docs/production.md",
+  "revision": "2026-09-19",
+  "look_down_anchor": "source/look-down-anchor.png",
+  "optimized_rows": [
+    "running-right",
+    "running-left",
+    "jumping",
+    "running",
+    "review",
+    "look-row-9",
+    "look-row-10"
+  ]
 }

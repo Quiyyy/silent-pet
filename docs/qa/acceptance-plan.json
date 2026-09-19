@@ -1,0 +1,16 @@
+{
+  "required_before_install": [
+    "standard-visual-qa.visual_qa == pass",
+    "final v2 dimensions/transparency validation == ok",
+    "final despill == ok and alpha_preserved",
+    "all16 directions have independent explicit semantic verdicts and none fail",
+    "three isolated blind reviewers: cardinal hard gates pass",
+    "optimization targets157.5,202.5,225: horizontal majority votes must be correct",
+    "157.5->180 and337.5->000 have no conspicuous visual snap",
+    "preview model tests pass; final candidate works in browser controls",
+    "installed image hash matches the accepted project image"
+  ],
+  "known_limit": "Host desktop app UI is not automated under computer-use skill policy; browser simulation is recorded separately.",
+  "repair_policy": "Reject wrong quadrants or visible boundary snaps; resynthesize whole containing8-pose row, never patch isolated final cells.",
+  "source_provenance": "Only selected original built-in imagegen outputs enter decoded; rejected candidates stay inQA and are not packaged."
+}

@@ -1,0 +1,132 @@
+{
+  "idle": {
+    "bbox": [
+      16,
+      5,
+      175,
+      203
+    ],
+    "width": 159,
+    "height": 198,
+    "bottom": 203
+  },
+  "jumping_before": [
+    {
+      "bbox": [
+        22,
+        29,
+        169,
+        203
+      ],
+      "width": 147,
+      "height": 174,
+      "bottom": 203
+    },
+    {
+      "bbox": [
+        22,
+        22,
+        169,
+        201
+      ],
+      "width": 147,
+      "height": 179,
+      "bottom": 201
+    },
+    {
+      "bbox": [
+        22,
+        5,
+        169,
+        180
+      ],
+      "width": 147,
+      "height": 175,
+      "bottom": 180
+    },
+    {
+      "bbox": [
+        22,
+        25,
+        169,
+        203
+      ],
+      "width": 147,
+      "height": 178,
+      "bottom": 203
+    },
+    {
+      "bbox": [
+        22,
+        29,
+        169,
+        203
+      ],
+      "width": 147,
+      "height": 174,
+      "bottom": 203
+    }
+  ],
+  "jumping_after": [
+    {
+      "bbox": [
+        17,
+        11,
+        174,
+        203
+      ],
+      "width": 157,
+      "height": 192,
+      "bottom": 203
+    },
+    {
+      "bbox": [
+        17,
+        11,
+        174,
+        203
+      ],
+      "width": 157,
+      "height": 192,
+      "bottom": 203
+    },
+    {
+      "bbox": [
+        17,
+        5,
+        174,
+        186
+      ],
+      "width": 157,
+      "height": 181,
+      "bottom": 186
+    },
+    {
+      "bbox": [
+        17,
+        11,
+        174,
+        203
+      ],
+      "width": 157,
+      "height": 192,
+      "bottom": 203
+    },
+    {
+      "bbox": [
+        17,
+        11,
+        174,
+        203
+      ],
+      "width": 157,
+      "height": 192,
+      "bottom": 203
+    }
+  ],
+  "grounded_height_ratio_before": 0.8788,
+  "grounded_height_ratio_after": 0.9697,
+  "grounded_width_ratio_before": 0.9245,
+  "grounded_width_ratio_after": 0.9874,
+  "note": "Silhouette metrics are supporting evidence only; head/scroll identity and proportions require independent visual review."
+}

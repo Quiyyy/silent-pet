@@ -1,5 +1,6 @@
 {
-  "sha256": "6c10112566afdf692201ab090d16f6fcdd0c0ae0defc0a667136976ac2d26581",
+  "revision": "2026-09-19",
+  "sha256": "bafabc7ff8061956fe8f13f5d7bf3b495d054ef7f22ccc54854f6d03c0088085",
   "spriteVersionNumber": 2,
   "width": 1536,
   "height": 2288,
@@ -8,5 +9,8 @@
   "standard_animations": 9,
   "validation": "docs/qa/installed-validation.json",
   "visual_qa": "docs/qa/final-visual-qa.json",
-  "blind_qa": "docs/qa/direction-blind-validation.json"
+  "blind_qa": "docs/qa/direction-blind-validation.json",
+  "blind_summary": "docs/qa/blind-summary.json",
+  "interactive_tests": "docs/qa/interactive-tests.json",
+  "optimization_report": "docs/optimization-2026-09-19.md"
 }

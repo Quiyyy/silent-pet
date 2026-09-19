@@ -27,10 +27,12 @@ Use the same body height, head size, baseline, and planted-body position across 
 
 Keep the feet, base, or lower torso planted at the same coordinates across all eight frames. Express direction through the eyes, face, head, upper body, and physically appropriate prop movement, not by moving, rotating, or rescaling the entire sprite.
 
-Place one centered pose in each invisible equal-width slot on flat pure blue #0000FF. Change only the natural parts needed to express gaze: eyes, eyelids, head, face, neck, upper body, appendages, and constrained prop follow-through. Keep identity, silhouette, materials, palette, markings, and props consistent.
+Place one centered pose in each invisible equal-width slot on flat pure user-selected #0000FF. Change only the natural parts needed to express gaze: eyes, eyelids, head, face, neck, upper body, appendages, and constrained prop follow-through. Keep identity, silhouette, materials, palette, markings, and props consistent.
 
 ROW-BOUNDARY LOCK: 157.5 must be one even 22.5-degree step before 180. Match the approved 180 pose's body size, baseline, planted anchor, expression, and construction. Preserve the overall right-hand arc, but do not distort pupils, nose, or body geometry merely to exaggerate the subtle horizontal component.
 
 PRE-RETURN CHECK: reject this result if it does not contain eight separated pose groups in the required order; neighboring poses overlap; foreground is cropped at the outer canvas edge; any frame changes sprite scale, body or head size, baseline, or planted-body position; the row visibly reverses into the wrong half of the loop; or 157.5 does not flow evenly into 180. Minor intermediate pupil or nose deviations are not rejection reasons. Exact cell cropping, resizing, and recentering happen deterministically after generation.
 
 Do not rotate, skew, or tilt the whole sprite to fake gaze. Do not add replacement/googly eyes, labels, degree text, arrows, clocks, grids, shadows, glows, scenery, detached effects, or chroma-key colors inside the pet.
+
+Critical repair: 157.5 still has an unmistakable screen-right-facing nose and cheek profile; green eyes must aim down-right rather than down-left or back at the camera. Keep pitch modest so the eyes and nose remain visible. Do not make the final diagonal almost frontal. Interpolate the approved right cardinal toward down using a small but clearly visible rightward yaw at the last slot. All eight noses are centered/up or on SCREEN RIGHT, never left. Lock feet/scroll/body while head/eyes move.

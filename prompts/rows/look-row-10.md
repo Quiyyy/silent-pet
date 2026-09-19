@@ -1,36 +1,11 @@
-Create one horizontal look-direction strip for Codex pet `bone-horn-sorceress`, atlas row 10.
+Create one coherent8-pose row of this same pet on pure blue#0000FF. All full-body figures complete and separated, source canvas2172x724. The previous row is correct except its FIRST head bow is too deep. Redraw the whole family consistently.
 
-Use the attached canonical base, completed standard contact sheet, layout guide, and approved four-cardinal strip for identity, scale, registration, spacing, direction semantics, and cross-row continuity. Read `docs/look-mechanics.md` and follow its pet-specific movement and eye/prop mechanics. The approved cardinal strip and completed coherent row 9 are authoritative. Use the cardinals for direction meaning and row 9 for cross-row identity, scale, registration, and continuity.
+Image1 is the AUTHORITATIVE pose for the FIRST180 slot: gentle frontal down gaze, both eyes and cheeks fully visible, skull helmet stays high on the forehead. Reproduce this moderate head/face construction and down-looking eyes in the first figure. DO NOT reproduce the deeply buried head of the row target's first figure. Looking DOWN is carried mainly by pupils/eyelids plus a slight chin tuck; no deep neck bend. The first character should look almost as upright as the default pose, with downward eyes.
+Image2 is the whole-row target: preserve its body/feet/scroll scale and the seven already correct LEFT-facing poses.
+Remaining images provide identity, four-cardinal meanings, layout, standard body proportions, and row9 boundary/body evidence. Row9 rightward heads must not contaminate the LEFT half.
 
-COHERENT SYNTHESIS LOCK: produce one unified eight-pose row. Do not paste, tile, or independently restyle individual cells. Every final cell must be drawn together with the same face construction, body proportions, line/render quality, lighting, materials, scale, baseline, and registration.
+Left-to-right order:180 frontal-down;202.5 down-left;225 down-left;247.5 slightly down-left;270 horizontal-left;292.5 slightly up-left;315 up-left;337.5 mostly up with slight left.
+All seven non180 noses, faces and eyes remain SCREEN-LEFT. Preserve clear leftward yaw at202.5/225. The last337.5 now correctly matches row9's gentle000 pitch: keep it, do not deepen the chin lift or extend the neck.
 
-Output exactly 8 complete full-body frames in this exact left-to-right order: 180, 202.5, 225, 247.5, 270, 292.5, 315, 337.5. Degrees are clockwise: 000 is up, 090 right, 180 down, and 270 left. Neutral/front is not part of this row.
-
-DIRECTION TARGETS — use these to shape the coherent row, not as pixel-level landmark gates:
-
-1. `180`: vertical DOWN; no horizontal requirement.
-2. `202.5`: horizontal SCREEN-LEFT and vertical DOWN.
-3. `225`: horizontal SCREEN-LEFT and vertical DOWN.
-4. `247.5`: horizontal SCREEN-LEFT and vertical DOWN.
-5. `270`: horizontal SCREEN-LEFT; no vertical requirement.
-6. `292.5`: horizontal SCREEN-LEFT and vertical UP.
-7. `315`: horizontal SCREEN-LEFT and vertical UP.
-8. `337.5`: horizontal SCREEN-LEFT and vertical UP.
-
-Cardinals must be unmistakable. Intermediate poses should broadly occupy the intended quadrant and advance naturally through the ordered loop. Minor pupil, nose, eyelid, or aiming-feature deviations are acceptable when the overall direction, continuity, identity, and motion remain coherent. Do not deform the character merely to make every intermediate axis independently obvious.
-
-SCREEN-COORDINATE LOCK: screen-left means the viewer's left image edge, never the character's own left. The row should travel naturally through the left half of the loop. Near-vertical 202.5 and 337.5 may have subtle horizontal cues; prioritize a coherent arc over exact pupil or nose placement.
-
-HARD LAYOUT AND CONTINUITY CONTRACT — DETERMINISTIC REGISTRATION: draw exactly eight separated pose groups in left-to-right direction order. Keep enough chroma-only space between neighboring poses that each complete pose can be detected without cutting through foreground. Approximate the guide's equal spacing, but do not distort a pose merely to hit an exact source-canvas coordinate; deterministic assembly will crop the eight ordered groups, then apply one shared scale and baseline.
-
-Use the same body height, head size, baseline, and planted-body position across the generated family. Never overlap neighboring poses, merge two poses into one connected group, crop foreground at the outer canvas edge, or resize one pose independently.
-
-Keep the feet, base, or lower torso planted at the same coordinates across all eight frames. Express direction through the eyes, face, head, upper body, and physically appropriate prop movement, not by moving, rotating, or rescaling the entire sprite.
-
-Place one centered pose in each invisible equal-width slot on flat pure blue #0000FF. Change only the natural parts needed to express gaze: eyes, eyelids, head, face, neck, upper body, appendages, and constrained prop follow-through. Keep identity, silhouette, materials, palette, markings, and props consistent.
-
-ROW-BOUNDARY LOCK: 180 must continue directly from row 9's 157.5, matching its body size, baseline, planted anchor, expression, and construction. 337.5 must be one even 22.5-degree step before 000: nearly up-facing while remaining on the overall left-hand arc. Do not distort pupils, nose, or body geometry merely to exaggerate the subtle horizontal component.
-
-PRE-RETURN CHECK: reject this result if it does not contain eight separated pose groups in the required order; neighboring poses overlap; foreground is cropped at the outer canvas edge; any frame changes sprite scale, body or head size, baseline, or planted-body position; the row visibly reverses into the wrong half of the loop; or 180 does not continue from 157.5 or 337.5 does not flow evenly into 000. Minor intermediate pupil or nose deviations are not rejection reasons. Exact cell cropping, resizing, and recentering happen deterministically after generation.
-
-Do not rotate, skew, or tilt the whole sprite to fake gaze. Do not add replacement/googly eyes, labels, degree text, arrows, clocks, grids, shadows, glows, scenery, detached effects, or chroma-key colors inside the pet.
+Critical boundary: first180 must sit between row9's last157.5 and this row's202.5 in crown, eye, cheek and chin height. It must NOT be a local low-head extreme. Keep the skull eyebrows above the eyes as in image1; show the mouth and full cheeks. This is a gentle vertical gaze pose, not bowing politely.
+Feet/lower torso and right-side parchment anchored; identical head/scroll pixel size. Final renderer will use fixedscale0.5701754385964912. No whole-body rotation, no pasted/replacement eyes, no text/grid/shadows/effects/extra props.

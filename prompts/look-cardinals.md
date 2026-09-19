@@ -6,6 +6,8 @@ Output exactly four centered complete full-body poses in this exact left-to-righ
 
 For `000`, keep the face broadly frontal and point the eyes and natural head mechanism toward the TOP edge. For `090`, put the nose tip, pupils, face surface, or natural aiming feature on the screen-right side of the head center. For `180`, keep the face broadly frontal and point toward the BOTTOM edge. For `270`, apply the inverse screen-left landmark rule. Every cardinal must be unmistakable without labels.
 
-Place one pose in each invisible equal-width slot on a flat pure blue #0000FF background with generous padding. Keep scale, feet/base, lower body, and registration consistent across all four slots.
+Place one pose in each invisible equal-width slot on a flat pure user-selected #0000FF background with generous padding. Keep scale, feet/base, lower body, and registration consistent across all four slots.
 
 Do not rotate, skew, or tilt the whole sprite to fake gaze. Do not add replacement eyes, labels, degree text, arrows, boxes, guide marks, shadows, scenery, detached effects, or chroma-key colors inside the pet.
+
+Repair priority: stronger face/nose direction with the original eye construction; eyes agree with nose direction. Keep all facial landmarks visible, especially down: modest head pitch, open downward eyes, no face buried by helmet. Right/left must be clearly distinguishable in a blind viewer-coordinate test. Original lower body, scroll side and baseline locked.

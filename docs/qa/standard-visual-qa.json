@@ -1,26 +1,19 @@
 {
   "visual_qa": "pass",
-  "reviewer": "standard_preflight",
-  "scope": "all nine standard animation rows",
-  "method": "All normal-size temporal frames and wrap-to-first inspected; not live app playback",
-  "errors": [],
-  "accepted_warnings": [
-    {
-      "state": "running-left",
-      "severity": "minor",
-      "reason": "Frames 4-7 repeat a short cycle; alternate support is visible and closure is smooth, with smaller opposite-leg extension."
-    },
-    {
-      "state": "jumping",
-      "severity": "minor",
-      "reason": "Roughly 9-12 percent smaller overall than idle, mostly reads as crouch/short-leg hop; no conspicuous within-cycle scale pop."
-    },
-    {
-      "state": "all",
-      "severity": "minor",
-      "reason": "stable-slots extraction warnings reviewed visually; bodies, feet and scrolls remain coherent."
-    }
+  "reviewer": "opt_standard_qa",
+  "scope": "nine standard rows and three direct transition sequences",
+  "method": "Viewed contact sheets and every192x208 GIF frame in order with loop closure, not native app playback",
+  "evidence": {
+    "jumping": "Head, face, skull and scroll remain same visual scale as idle; at apex only knees tuck and feet lift. Grounded height ratio improves0.8788->0.9697, width0.9245->0.9874.",
+    "gait": "Both directions alternate different support/swing phases.0/4 and1/5 differ; no old four-frame duplication;7->0 closes smoothly.",
+    "work_and_review": "Work traces clues with index finger and eyes; review lifts eyes and nods with satisfaction.",
+    "preserved": "idle,waving,failed,waiting retain approved construction.",
+    "transitions": "hop,drag,work sequences show no size pulse, floating baseline or broken prop attachment."
+  },
+  "warnings": [
+    "Left-facing run versus front-facing idle changes scroll screen side directly; this is an orientation transition, with stable size and grip.",
+    "stable-slots extraction visually reviewed; no clipping or unintended scaling.",
+    "Pre-clean color edges reserved for the single final despill pass."
   ],
-  "direction_scope": false,
   "repair_rows": []
 }

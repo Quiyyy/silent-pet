@@ -1,0 +1,19 @@
+{
+  "preview_implementation": {
+    "unit_tests_passed": 4,
+    "browser_state_buttons": 9,
+    "browser_direction_buttons": 16,
+    "scrub": "pass",
+    "step": "pass",
+    "transition_modes": 3,
+    "background": "dark verified visually",
+    "zoom": "2x verified 384x416",
+    "pointer_cardinal_mapping": "up0,right90,down180,left270 all verified by actual preview pointer input",
+    "compact_preview": "0.5x (96x104) display and dark background verified; normal and narrow single-column layouts observed"
+  },
+  "native_desktop_ui": {
+    "status": "not_automated_by_skill_policy",
+    "evidence": "Computer-use guidance forbids automating the ChatGPT desktop app UI; no host-app input was performed. Independent browser preview tests do not imply desktop runtime verification."
+  },
+  "final_candidate_recheck": "pass: cleaned final atlas loaded, all9 state buttons and16 direction buttons verified, direct hop sequence visibly animates, browser console has0 errors"
+}

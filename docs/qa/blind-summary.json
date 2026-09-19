@@ -1,0 +1,32 @@
+{
+  "ok": true,
+  "majority_correct": 28,
+  "majority_total": 28,
+  "individual_correct": 79,
+  "individual_ambiguous": 5,
+  "individual_wrong": 0,
+  "individual_total": 84,
+  "target_horizontal": [
+    {
+      "observed": "screen-left",
+      "expected": "screen-left",
+      "source_direction": "225",
+      "pass": true
+    },
+    {
+      "observed": "screen-right",
+      "expected": "screen-right",
+      "source_direction": "157.5",
+      "pass": true
+    },
+    {
+      "observed": "screen-left",
+      "expected": "screen-left",
+      "source_direction": "202.5",
+      "pass": true
+    }
+  ],
+  "warnings": [],
+  "reviewers": "three fresh isolated agents",
+  "display": "original192x208 cells in unscaled four-part challenge"
+}

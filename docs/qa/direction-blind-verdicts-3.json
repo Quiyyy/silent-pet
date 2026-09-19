@@ -2,87 +2,87 @@
   "pairs": [
     {
       "pair": "horizontal-1",
-      "A": "screen-left",
-      "B": "screen-right",
-      "reason": "A鼻尖和脸转向画面左侧；B鼻尖、眼睛朝画面右侧。"
+      "A": "screen-right",
+      "B": "ambiguous",
+      "reason": "A鼻尖与脸颊轮廓偏向画面右侧；B仰脸近正面，鼻尖基本居中。"
     },
     {
       "pair": "horizontal-2",
       "A": "screen-left",
       "B": "screen-right",
-      "reason": "A头脸明显左转，瞳孔偏左；B脸转向右侧，瞳孔偏右。"
+      "reason": "A鼻尖、瞳孔及露出的脸侧朝画面左；B鼻尖和单侧脸轮廓朝画面右。"
     },
     {
       "pair": "horizontal-3",
-      "A": "screen-left",
-      "B": "screen-right",
-      "reason": "A鼻尖及眼睑朝左；B鼻尖与脸部朝右。"
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A鼻尖略落在面中线右侧、右侧脸缘更突出；B鼻尖与视线明显偏画面左。"
     },
     {
       "pair": "horizontal-4",
-      "A": "screen-left",
-      "B": "screen-right",
-      "reason": "A脸部和鼻尖偏左；B脸部明显偏右。"
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A鼻尖和瞳孔偏画面右；B鼻梁、鼻尖及侧脸轮廓转向画面左。"
     },
     {
       "pair": "horizontal-5",
-      "A": "screen-left",
-      "B": "screen-right",
-      "reason": "A瞳孔、鼻尖和脸转角指向左；B对应地标指向右。"
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A低头时鼻尖仍朝画面右；B鼻尖与可见脸侧明确朝画面左。"
     },
     {
       "pair": "horizontal-6",
-      "A": "screen-right",
+      "A": "screen-left",
       "B": "screen-right",
-      "reason": "两者鼻尖和瞳孔都偏向画面右侧，虽俯视角度不同。"
+      "reason": "A低垂的鼻尖和瞳孔偏画面左；B鼻尖、脸颊朝画面右。"
     },
     {
       "pair": "horizontal-7",
-      "A": "screen-left",
-      "B": "screen-right",
-      "reason": "A眼睛与脸转角偏左；B鼻尖和瞳孔偏右。"
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A俯脸但鼻尖及可见脸侧略偏画面右；B鼻尖与眼睛朝画面左。"
     },
     {
       "pair": "vertical-1",
       "A": "up",
       "B": "down",
-      "reason": "A下巴抬起、瞳孔位于眼睛上方；B头部俯下且瞳孔偏下。"
+      "reason": "A下巴抬起、瞳孔上移且下眼白更显；B额骨压低、上眼睑下压并俯视。"
     },
     {
       "pair": "vertical-2",
       "A": "down",
-      "B": "up",
-      "reason": "A眼睑下压、瞳孔偏下；B脸和瞳孔明显抬向上方。"
+      "B": "ambiguous",
+      "reason": "A头部前俯、上眼睑压低；B眼睑与鼻尖位置接近水平中性，俯仰证据不足。"
     },
     {
       "pair": "vertical-3",
-      "A": "up",
-      "B": "down",
-      "reason": "A下巴抬起、眼睛朝上；B头部下俯、瞳孔朝下。"
+      "A": "down",
+      "B": "ambiguous",
+      "reason": "A鼻尖下沉、眼睛向下看；B脸部基本平视，仅有轻微抬眼，难判明确向上。"
     },
     {
       "pair": "vertical-4",
-      "A": "up",
-      "B": "down",
-      "reason": "A脸部仰起且瞳孔偏上；B眼睑和瞳孔均向下。"
+      "A": "ambiguous",
+      "B": "ambiguous",
+      "reason": "A、B的下巴、鼻尖和眼睑都接近平视姿态，没有稳定的上仰或下俯地标。"
     },
     {
       "pair": "vertical-5",
       "A": "down",
       "B": "up",
-      "reason": "A明显低头、瞳孔下移；B下巴抬起、瞳孔上移。"
+      "reason": "A额骨前压、眼睑低垂且鼻尖向下；B下巴明显抬高、瞳孔上移。"
     },
     {
       "pair": "vertical-6",
       "A": "down",
       "B": "up",
-      "reason": "A眼睛和鼻尖向下；B脸部仰起、瞳孔位于上侧。"
+      "reason": "A头顶前倾、视线下落；B颈部伸直抬颏，鼻尖与瞳孔朝上。"
     },
     {
       "pair": "vertical-7",
-      "A": "down",
-      "B": "up",
-      "reason": "A头部俯视且瞳孔偏下；B下巴抬起、瞳孔偏上。"
+      "A": "up",
+      "B": "down",
+      "reason": "A下巴抬起、眼睛向上看；B头部前俯、上眼睑下压且鼻尖下沉。"
     }
   ]
 }

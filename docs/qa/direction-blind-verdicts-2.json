@@ -2,87 +2,87 @@
   "pairs": [
     {
       "pair": "horizontal-1",
-      "A": "ambiguous",
-      "B": "screen-right",
-      "reason": "A双眼近正中且脸部接近正面；B瞳孔偏右、鼻尖与脸转向右侧。"
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A鼻尖与脸侧朝右、瞳孔偏右；B鼻尖与可见脸侧朝左、瞳孔偏左。"
     },
     {
       "pair": "horizontal-2",
       "A": "screen-left",
       "B": "screen-right",
-      "reason": "A鼻尖、脸转角和瞳孔均偏向屏幕左；B对应地标偏向屏幕右。"
+      "reason": "A鼻尖突出在左侧且目光向左；B鼻尖朝右、右侧脸缘更明确。"
     },
     {
       "pair": "horizontal-3",
-      "A": "screen-left",
-      "B": "screen-right",
-      "reason": "A脸转向左且瞳孔偏左；B脸和视线明显转向右。"
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A鼻尖和瞳孔均偏右；B鼻尖朝左，瞳孔也落在眼睛左侧。"
     },
     {
       "pair": "horizontal-4",
-      "A": "screen-left",
-      "B": "screen-right",
-      "reason": "A鼻尖及眼睑朝左；B鼻尖、脸转角和瞳孔朝右。"
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A右侧鼻尖与脸颊轮廓更突出；B鼻尖、嘴部和视线均朝左。"
     },
     {
       "pair": "horizontal-5",
-      "A": "screen-left",
-      "B": "screen-right",
-      "reason": "A头脸与瞳孔偏左；B头脸和瞳孔偏右。"
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A鼻尖向右且右侧脸缘外凸；B为明显左转侧脸，鼻尖与视线朝左。"
     },
     {
       "pair": "horizontal-6",
-      "A": "screen-right",
-      "B": "screen-left",
-      "reason": "A下垂眼睑下仍可见瞳孔偏右、脸略右转；B脸和瞳孔略偏左。"
+      "A": "screen-left",
+      "B": "screen-right",
+      "reason": "A低头时鼻尖仍指向左、瞳孔偏左；B鼻尖和瞳孔朝右。"
     },
     {
       "pair": "horizontal-7",
-      "A": "screen-left",
-      "B": "screen-right",
-      "reason": "A可见眼瞳偏左且脸略左转；B可见眼瞳偏右且脸略右转。"
+      "A": "screen-right",
+      "B": "screen-left",
+      "reason": "A低头脸型向右收尖；B左侧鼻尖突出，瞳孔也偏左。"
     },
     {
       "pair": "vertical-1",
       "A": "up",
       "B": "down",
-      "reason": "A瞳孔位于眼裂上方、下巴抬起；B眼睑压低且瞳孔向下。"
+      "reason": "A下巴抬起、鼻孔和眼白下缘更显；B上眼睑压低，鼻尖与视线朝下。"
     },
     {
       "pair": "vertical-2",
       "A": "down",
       "B": "up",
-      "reason": "A眼睑下压、瞳孔下移；B瞳孔上移且脸部抬起。"
+      "reason": "A眼睑下压、瞳孔靠下且额发遮眼更深；B下巴稍抬，瞳孔位置较高。"
     },
     {
       "pair": "vertical-3",
-      "A": "up",
-      "B": "down",
-      "reason": "A眼睛与鼻尖朝上；B眼睑下垂、瞳孔向下。"
+      "A": "down",
+      "B": "up",
+      "reason": "A头顶前倾、上眼睑压住瞳孔；B脸面上仰，眼睛张开且瞳孔偏上。"
     },
     {
       "pair": "vertical-4",
       "A": "up",
       "B": "down",
-      "reason": "A瞳孔在眼裂上部且脸略抬；B瞳孔较低、眼睑压低。"
+      "reason": "A下巴和鼻尖略抬、眼睛较开；B额发压低并遮住更多眼部，视线向下。"
     },
     {
       "pair": "vertical-5",
       "A": "down",
       "B": "up",
-      "reason": "A明显低头、瞳孔下移；B下巴抬起、瞳孔上移。"
+      "reason": "A明显俯首、上眼睑压低；B明显抬下巴，鼻孔与眼白下缘可见。"
     },
     {
       "pair": "vertical-6",
       "A": "down",
       "B": "up",
-      "reason": "A低头且瞳孔贴近下眼睑；B脸后仰、视线向上。"
+      "reason": "A额骨前倾、眼睑和瞳孔朝下；B下巴抬高，鼻尖上扬并露出更多眼白下缘。"
     },
     {
       "pair": "vertical-7",
-      "A": "down",
-      "B": "up",
-      "reason": "A眼睑下压并低头；B瞳孔偏上、鼻尖和脸部抬起。"
+      "A": "up",
+      "B": "down",
+      "reason": "A脸面抬起、眼睛向上张开；B头部前俯，上眼睑压低且视线落下。"
     }
   ]
 }
