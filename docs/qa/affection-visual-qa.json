@@ -1,0 +1,94 @@
+{
+  "verdict": "pass",
+  "reviewer": "independent_final_visual_qa",
+  "scope": "User-authorized replacement of row 4 with a quiet affectionate five-frame sequence; all other atlas pixels inherit the previously approved visual QA through preservation.json.",
+  "inspection_method": {
+    "artifacts": [
+      "previews/affection-transition.png",
+      "previews/affection-transition.gif",
+      "previews/jumping.gif",
+      "previews/contact-sheet.png",
+      "spritesheet.webp"
+    ],
+    "method": "Inspected the original-size 192x208 frames in order on both light and dark backgrounds, including idle -> five row-4 frames -> idle and the row-4 wrap from frame 4 back to frame 0. This was frame-by-frame visual QA, not live browser or desktop playback."
+  },
+  "semantic_authorization": {
+    "accepted": true,
+    "slot": "jumping",
+    "new_behavior": "quiet affectionate motion: slight head tilt, closed-eye smile, and recovery",
+    "note": "The user explicitly authorized this semantic replacement and did not require a jump."
+  },
+  "visual_evidence": {
+    "identity": "pass: the same horned skull headdress, white hair, green cloak, face, clothing, boots, gloves, and scroll are preserved in all five frames.",
+    "head_and_face": "pass: frame 1 introduces a restrained head tilt, frame 2 shows a closed-eye smile, and frames 3-4 recover naturally without facial deformation or identity drift.",
+    "baseline_and_scale": "pass: every row-4 frame ends at alpha bbox y=203; top bounds vary only from y=5 to y=7. Bbox widths vary from 156 to 157 pixels, with no visible size pop against idle.",
+    "feet": "pass: both boots remain planted on the same baseline with no sliding, cropping, or floating.",
+    "scroll_and_hands": "pass: the scroll stays attached to both hands with stable height, size, and angle; no teleport or prop-side change is visible.",
+    "internal_loop": "pass: frame 4 returns smoothly to frame 0; the repeated first frame shows no conspicuous snap.",
+    "idle_transition": "pass: idle -> frame 0 and frame 4 -> idle preserve practical scale, baseline, silhouette, and prop placement. The alpha center changes from idle (94.74,111.64) to row-4 endpoints (94.37,110.29) and (94.84,111.02), which is visually negligible.",
+    "transparency_and_clipping": "pass: light/dark background review shows no cropped foreground, opaque panel, accidental transparent body hole, seam, or detached/floating pixel cluster. Deterministic row QA reports zero edge pixels and zero chroma-adjacent pixels for all five frames.",
+    "contact_sheet": "pass: row 4 reads as a cohesive calm affectionate sequence within the full 8x11 atlas and remains proportionally consistent with idle and the unchanged rows."
+  },
+  "deterministic_evidence": {
+    "preservation": {
+      "outside_row4_identical_rgba": true,
+      "effect": "The prior approval of the other eight standard states and all sixteen look directions remains valid."
+    },
+    "despill": {
+      "ok": true,
+      "alpha_preserved": true,
+      "algorithm": "edge-local-chroma-spill-suppression"
+    },
+    "v2_validation": {
+      "ok": true,
+      "sprite_version_number": 2,
+      "dimensions": "1536x2288",
+      "errors": [],
+      "warnings": []
+    },
+    "row4_validation": {
+      "expected_frames": 5,
+      "actual_frames": 5,
+      "auto_component_review_ok": true,
+      "stable_slots_review_ok": true,
+      "frame_bboxes": {
+        "0": [
+          17,
+          6,
+          174,
+          203
+        ],
+        "1": [
+          17,
+          7,
+          174,
+          203
+        ],
+        "2": [
+          17,
+          5,
+          173,
+          203
+        ],
+        "3": [
+          17,
+          5,
+          174,
+          203
+        ],
+        "4": [
+          17,
+          7,
+          174,
+          203
+        ]
+      }
+    }
+  },
+  "accepted_warnings": [],
+  "blocking_issues": [],
+  "limitations": [
+    "The animated files were assessed through their ordered source frames and timing metadata rather than a live Codex renderer, browser, or desktop playback session.",
+    "Only row 4 and its idle boundaries were re-reviewed visually; preservation.json establishes exact RGBA identity outside row 4, so unchanged rows and direction evidence were not redundantly re-tested."
+  ]
+}

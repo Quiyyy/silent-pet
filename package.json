@@ -1,1 +1,1 @@
-{"name":"silent-pet","private":true,"type":"module","engines":{"node":">=18"},"scripts":{"test":"node --test tests/preview.test.mjs"}}
+{"name":"silent-pet","private":true,"type":"module","engines":{"node":">=18"},"scripts":{"test":"node --test tests/preview.test.mjs tests/interaction.test.mjs"}}

@@ -4,7 +4,7 @@ export const STATES = Object.freeze({
   'running-right': { label: '向右跑', row: 1, durations: [120,120,120,120,120,120,120,220] },
   'running-left': { label: '向左跑', row: 2, durations: [120,120,120,120,120,120,120,220] },
   waving: { label: '招手', row: 3, durations: [140,140,140,280] },
-  jumping: { label: '小跳', row: 4, durations: [140,140,140,140,280] },
+  jumping: { label: '亲近回应', row: 4, durations: [140,140,140,140,280] },
   failed: { label: '失落', row: 5, durations: [140,140,140,140,140,140,140,240] },
   waiting: { label: '等待回应', row: 6, durations: [150,150,150,150,150,260] },
   running: { label: '寻找线索', row: 7, durations: [120,120,120,120,120,220] },
@@ -14,7 +14,7 @@ export const DIRECTIONS = Array.from({ length: 16 }, (_, i) => i * 22.5);
 export const SEQUENCES = Object.freeze({
   work: { label: '工作 → 等待 → 完成', states: ['idle','running','waiting','running','review','idle'] },
   drag: { label: '待机 → 左右拖动 → 松手', states: ['idle','running-right','idle','running-left','idle'] },
-  hop: { label: '待机 → 小跳 → 回落', states: ['idle','jumping','idle','jumping','idle'] }
+  hop: { label: '待机 → 亲近 → 安静', states: ['idle','jumping','idle','jumping','idle'] }
 });
 export function duration(state) { return STATES[state].durations.reduce((a,b)=>a+b,0); }
 export function frameAt(state, elapsed) {

@@ -19,7 +19,16 @@
       "state": "jumping",
       "source": "source/rows/jumping.png",
       "prompt": "prompts/rows/jumping.md",
-      "layout_guide": "source/layout-guides/jumping.png"
+      "layout_guide": "source/layout-guides/jumping.png",
+      "meaning": "User-approved quiet affectionate response in the native hover/jumping slot.",
+      "revision": "2026-09-19-affection",
+      "input_images": [
+        "https://raw.githubusercontent.com/Quiyyy/silent-pet/1d6d3735332a727ba1206faa521bf09947c6b905/source/reference.png",
+        "https://raw.githubusercontent.com/Quiyyy/silent-pet/1d6d3735332a727ba1206faa521bf09947c6b905/source/layout-guides/jumping.png",
+        "https://raw.githubusercontent.com/Quiyyy/silent-pet/1d6d3735332a727ba1206faa521bf09947c6b905/source/look-anchors.png"
+      ],
+      "source_background": "transparent RGBA",
+      "extraction": "stable-slots; source component check and independent final visual QA passed"
     },
     {
       "state": "look-row-10",

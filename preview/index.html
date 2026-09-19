@@ -1,6 +1,6 @@
 <!doctype html>
 <html lang="zh-CN">
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>silent pet · 动作检查</title><link rel="stylesheet" href="style.css"></head>
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>silent pet · 陪伴与动作检查</title><link rel="stylesheet" href="style.css"></head>
 <body>
 <header><div class="mark">s<span>p</span></div><div><p class="eyebrow">SILENT PET / MOTION LAB</p><h1>让每一个小动作都自然。</h1></div><a href="../README.md" class="doc">项目说明 ↗</a></header>
 <main>
@@ -16,6 +16,18 @@
   <p id="hint" class="hint">点击下方缩略帧可暂停定位。基线用于检查脚底与角色大小。</p>
 </section>
 <aside>
+  <section class="panel interaction-panel"><p class="eyebrow">PLAY / INTERACTION</p><h2>安静地陪着你</h2>
+    <button id="interactive" type="button" aria-pressed="false">进入互动体验</button>
+    <p class="hint">靠近注视 · 轻点亲近 · 拖动移动</p>
+    <div id="interaction-options" hidden>
+      <p id="interaction-status" role="status">安静陪伴</p>
+      <label>当前状态 <select id="activity" aria-label="模拟任务状态"><option value="idle">空闲</option><option value="running">工作中</option><option value="waiting">等待回应</option><option value="review">检查结果</option><option value="failed">遇到问题</option></select></label>
+      <label class="motion-option"><input id="reduced-motion" type="checkbox">减少动态效果</label>
+      <button id="reset-position" type="button">回到中间</button>
+    </div>
+    <p class="hint native-note">互动体验为浏览器原型。安装到 Codex 后，亲近动画使用现有悬停槽位；鼠标靠近注视、点击回应与冷却仍需客户端支持。</p>
+  </section>
+
   <section class="panel"><p class="eyebrow">01 / STATES</p><h2>九种状态</h2><div id="states" class="button-grid"></div></section>
   <section class="panel"><p class="eyebrow">02 / GAZE</p><h2>十六个方向</h2><div class="direction-tools"><button id="neutral" type="button">默认姿势</button><button id="look-loop" type="button">顺时针巡看</button><button id="pointer" type="button" aria-pressed="false">跟随预览区指针</button></div><div id="directions" class="directions"></div><p class="hint">这里可手动触发全部方向，不代表桌面应用中的触发规则。</p></section>
   <section class="panel"><p class="eyebrow">03 / TRANSITIONS</p><h2>连续切换</h2><div id="sequences" class="sequences"></div><p class="hint">直接切换原始帧，不加淡入淡出，方便看出尺寸跳动。</p></section>

@@ -1,6 +1,6 @@
 {
-  "revision": "2026-09-19",
-  "sha256": "bafabc7ff8061956fe8f13f5d7bf3b495d054ef7f22ccc54854f6d03c0088085",
+  "revision": "2026-09-19-affection",
+  "sha256": "c354ee89ed5532ee4b3229163327f70006e7a0dfa50b5bd11c37a557c037676c",
   "spriteVersionNumber": 2,
   "width": 1536,
   "height": 2288,
@@ -8,9 +8,12 @@
   "directions": 16,
   "standard_animations": 9,
   "validation": "docs/qa/installed-validation.json",
-  "visual_qa": "docs/qa/final-visual-qa.json",
+  "visual_qa": "docs/qa/affection-visual-qa.json",
   "blind_qa": "docs/qa/direction-blind-validation.json",
   "blind_summary": "docs/qa/blind-summary.json",
-  "interactive_tests": "docs/qa/interactive-tests.json",
-  "optimization_report": "docs/optimization-2026-09-19.md"
+  "interactive_tests": "docs/qa/interaction-tests.json",
+  "optimization_report": "docs/optimization-2026-09-19.md",
+  "retained_visual_qa": "docs/qa/final-visual-qa.json",
+  "preservation": "docs/qa/preservation.json",
+  "interaction_report": "docs/interaction-2026-09-19.md"
 }

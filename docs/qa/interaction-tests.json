@@ -1,0 +1,27 @@
+{
+  "revision": "2026-09-19-affection",
+  "node_tests": {
+    "passed": 15,
+    "failed": 0,
+    "command": "npm test"
+  },
+  "syntax_check": "pass",
+  "http_preview": {
+    "page": 200,
+    "app_mjs": 200,
+    "interaction_mjs": 200,
+    "model_mjs": 200,
+    "style_css": 200,
+    "spritesheet": 200,
+    "javascript_mime": "text/javascript"
+  },
+  "browser_input_acceptance": {
+    "status": "blocked",
+    "reason": "Automation runtime failed to initialize twice: windows sandbox failed: helper_unknown_error: setup refresh had errors",
+    "not_claimed": "Unit tests and HTTP checks do not demonstrate actual browser interaction."
+  },
+  "native_desktop_acceptance": {
+    "status": "not_performed",
+    "scope": "Installed-file, atlas structure and hash verification only."
+  }
+}
