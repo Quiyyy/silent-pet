@@ -1,0 +1,23 @@
+{
+  "purpose": "Diagnostic foot-position guide only, not an accepted finished animation.",
+  "temporary_colors": {
+    "blue": "nominal near leg",
+    "red": "nominal far leg"
+  },
+  "valid_cues": [
+    "A blue right/front and red left/back",
+    "B blue planted, red swings forward",
+    "C blue left/back and red right/front",
+    "D red planted, blue swings forward"
+  ],
+  "known_limitations": [
+    "Foreground/background occlusion does not consistently preserve near/far identity in C/D.",
+    "Passing poses lift the knees too high."
+  ],
+  "final_row_requirements": [
+    "Restore original tan/brown boots; no diagnostic color in final pet.",
+    "Reduce swing height and keep upright trunk.",
+    "Generate a complete coherent 8-frame cycle and review ordered foot trajectories and visible occlusion independently."
+  ],
+  "normalization": "Uniform resize of generated guide only; final pet frames are not derived from these pixels."
+}
