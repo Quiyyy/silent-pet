@@ -1,0 +1,25 @@
+{
+  "purpose": "Anatomical phase/layout reference only; not final pet art.",
+  "phase_order": [
+    "0 NEAR CONTACT",
+    "1 NEAR SUPPORT",
+    "2 FAR PASSING",
+    "3 FAR APPROACH",
+    "4 FAR CONTACT",
+    "5 FAR SUPPORT",
+    "6 NEAR PASSING",
+    "7 NEAR APPROACH"
+  ],
+  "native_frame_durations_ms": [
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    120,
+    220
+  ],
+  "same_leg_identity_required": true,
+  "upright_torso_required": true
+}
