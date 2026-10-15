@@ -1,4 +1,5 @@
 import { STATES, frameAt, pointerDirection } from './model.mjs';
+import { nativeFrameAt } from './native-playback.mjs';
 
 const reactionDurationsMs = Object.freeze([400, 500, 650, 500, 350]);
 
@@ -170,6 +171,6 @@ export class PetInteraction {
       return { ...common, kind: 'gaze', direction: this.gazeDirection() };
     }
     this.gaze = null;
-    return { ...common, kind: 'idle', state: 'idle', frame: this.reducedMotion ? 0 : frameAt('idle', now - this.startedAt) };
+    return { ...common, kind: 'idle', state: 'idle', frame: nativeFrameAt('idle', now - this.startedAt, { reducedMotion: this.reducedMotion }).frame };
   }
 }

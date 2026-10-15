@@ -94,3 +94,10 @@ test('leaving the hover area does not cut off the slow reaction or queue a repea
  p.updatePointer(point(),3000);p.snapshot(3500);p.snapshot(8000);
  assert.equal(p.reactionId,1);
 });
+
+test('prototype idle stays calm at the verified desktop cadence', () => {
+ const pet = new PetInteraction();
+ assert.equal(pet.snapshot(500).frame, 0);
+ assert.equal(pet.snapshot(1680).frame, 1);
+ assert.equal(pet.snapshot(6600).frame, 0);
+});

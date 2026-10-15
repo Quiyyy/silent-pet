@@ -19,3 +19,5 @@ button:disabled,select:disabled{opacity:.4;cursor:default}
 .native-note{border-top:1px solid #dbe3d3;padding-top:10px}
 [hidden]{display:none!important}
 @media(prefers-reduced-motion:reduce){button{transition:none}}
+
+.playback-options{display:flex;gap:10px;align-items:center;flex-wrap:wrap;font-size:12px;margin-top:16px}.playback-options select{max-width:100%}.transport{flex-wrap:wrap}

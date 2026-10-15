@@ -1,5 +1,6 @@
 import { CELL, STATES, DIRECTIONS, SEQUENCES, frameAt, directionCell, pointerDirection, sequenceAt } from './model.mjs';
-import { PetInteraction, clampOffset } from './interaction.mjs';
+import { PetInteraction, clampOffset } from './interaction.mjs?v=audit-20261015';
+import { nativeFrameAt, nativeSequenceAt } from './native-playback.mjs';
 
 const $ = id => document.getElementById(id);
 const canvas = $('pet'), ctx = canvas.getContext('2d'), image = new Image(), stage = $('stage');
@@ -7,7 +8,7 @@ const motionPreference = matchMedia('(prefers-reduced-motion: reduce)');
 const interaction = new PetInteraction({ reducedMotion: motionPreference.matches });
 $('reduced-motion').checked = interaction.reducedMotion;
 let mode = 'state', state = 'idle', sequence = 'work', elapsed = 0, direction = 0;
-let playing = true, speed = 1, last = 0, lastFilm = '', ready = false;
+let playing = true, speed = 1, last = 0, lastFilm = '', ready = false, playback = 'native';
 let offset = { x: 0, y: 0 }, gesture = null;
 const stateButtons = new Map(), directionButtons = [];
 function button(label, action, parent) {
@@ -37,7 +38,7 @@ function setMode(next) {
   canvas.setAttribute('role', interactive ? 'button' : 'img');
   canvas.setAttribute('aria-label', interactive ? '猎豹，按回车或空格亲近，拖动可移动位置' : '宠物动作预览');
   stage.dataset.interactive = String(interactive);
-  for (const id of ['play', 'previous', 'next', 'speed']) $(id).disabled = interactive;
+  for (const id of ['play', 'previous', 'next', 'speed', 'playback-rule']) $(id).disabled = interactive;
   $('interaction-options').hidden = !interactive;
   $('interactive').setAttribute('aria-pressed', String(interactive));
   $('hint').textContent = interactive
@@ -60,6 +61,10 @@ function active(now) {
       : { ...s, state: 'look', frame: s.direction, ...directionCell(s.direction) };
     return { ...s, row: STATES[s.state].row, column: s.frame };
   }
+  if (mode === 'sequence' && playback === 'native') {
+    const s = nativeSequenceAt(sequence, elapsed, { reducedMotion: interaction.reducedMotion });
+    return { ...s, row: STATES[s.state].row, column: s.frame };
+  }
   if (mode === 'sequence') {
     const s = sequenceAt(sequence, elapsed), frame = frameAt(s.state, s.elapsed);
     return { state: s.state, frame, row: STATES[s.state].row, column: frame };
@@ -68,6 +73,10 @@ function active(now) {
   if (['direction', 'look-loop', 'pointer'].includes(mode)) {
     const i = mode === 'look-loop' ? Math.floor(elapsed / 160) % 16 : direction;
     return { state: 'look', frame: i, ...directionCell(i) };
+  }
+  if (playback === 'native') {
+    const s = nativeFrameAt(state, elapsed, { reducedMotion: interaction.reducedMotion });
+    return { ...s, row: STATES[s.state].row, column: s.frame };
   }
   const frame = frameAt(state, elapsed); return { state, frame, row: STATES[state].row, column: frame };
 }
@@ -91,7 +100,7 @@ function filmstrip(a) {
         playing = false;
         if (key === 'look') { setMode('direction'); direction = i; }
         else if (key === 'neutral') setMode('neutral');
-        else { setMode('state'); state = key; elapsed = STATES[key].durations.slice(0, i).reduce((x, y) => x + y, 0); }
+        else { useFrameInspection(); setMode('state'); state = key; elapsed = STATES[key].durations.slice(0, i).reduce((x, y) => x + y, 0); }
         paint();
       });
       $('filmstrip').append(b);
@@ -99,21 +108,26 @@ function filmstrip(a) {
   }
   [...$('filmstrip').children].forEach((b, i) => b.classList.toggle('active', i === a.frame));
 }
+function useFrameInspection() { playback = 'loop'; $('playback-rule').value = playback; }
 function paint(now = performance.now()) {
   if (!ready) return;
   const a = active(now);
   draw(ctx, a.row, a.column);
   canvas.dataset.state = a.state; canvas.dataset.frame = String(a.frame); canvas.dataset.mode = mode;
   canvas.dataset.kind = a.kind ?? 'inspection';
+  canvas.dataset.playback = mode === 'interactive' ? 'prototype' : playback;
+  canvas.dataset.phase = a.phase ?? '';
+  canvas.dataset.requestedState = a.requestedState ?? a.state;
   canvas.dataset.reactionId = String(a.reactionId ?? 0);
   canvas.dataset.reactionSource = a.source ?? '';
   $('state-name').textContent = a.state === 'look' ? DIRECTIONS[a.frame] + '°' : a.state === 'neutral' ? '默认姿势' : STATES[a.state].label;
+  if (a.phase === 'idle-return') $('state-name').textContent = STATES[a.requestedState].label + ' · 动画回到待机';
   $('mode-label').textContent = mode === 'interactive' ? '互动体验 · 浏览器原型'
     : mode === 'sequence' ? SEQUENCES[sequence].label : mode === 'pointer' ? '预览区指针跟随'
-    : mode === 'look-loop' ? '16方向连续检查' : ['direction', 'neutral'].includes(mode) ? '方向定位' : '原生节奏检查';
+    : mode === 'look-loop' ? '16方向连续检查' : ['direction', 'neutral'].includes(mode) ? '方向定位' : playback === 'native' ? '桌面播放规则模拟' : '逐帧循环检查';
   $('play').textContent = playing ? '暂停' : '播放'; $('play').setAttribute('aria-pressed', String(playing));
   $('frame-label').textContent = a.state === 'look' ? '方向 ' + (a.frame + 1) + ' / 16' : a.state === 'neutral' ? '默认姿势' : '第 ' + (a.frame + 1) + ' / ' + STATES[a.state].durations.length + ' 帧';
-  for (const [k, b] of stateButtons) b.classList.toggle('active', a.state === k);
+  for (const [k, b] of stateButtons) b.classList.toggle('active', (a.requestedState ?? a.state) === k);
   directionButtons.forEach((b, i) => b.classList.toggle('active', a.state === 'look' && a.frame === i));
   $('pointer').setAttribute('aria-pressed', String(mode === 'pointer'));
   if (mode === 'interactive') {
@@ -121,13 +135,16 @@ function paint(now = performance.now()) {
     const status = labels[a.kind] + (a.cooldownMs > 0 && a.kind !== 'affection' ? ' · 稍后再亲近' : '');
     if ($('interaction-status').textContent !== status) $('interaction-status').textContent = status;
   }
-  if (mode !== 'interactive') $('hint').textContent = a.state === 'waving'
-    ? '桌面端招手对应首次唤醒问候（约 8 秒），同一宠物通常不重复；此处可手动循环检查。'
-    : '点击下方缩略帧可暂停定位。基线用于检查脚底与角色大小。';
+  if (mode !== 'interactive') {
+    const waveHint = (a.requestedState ?? a.state) === 'waving' ? '招手对应首次唤醒问候（约 8 秒），同一宠物通常不重复。' : '';
+    $('hint').textContent = ['state', 'sequence'].includes(mode) && playback === 'native'
+      ? waveHint + '按本机桌面规则：待机一轮 6.6 秒；其它动作三轮后回到慢速待机。动画回待机不代表任务完成。'
+      : waveHint + '逐帧循环用于检查素材，不代表桌面会持续重复。点击缩略帧可暂停定位。';
+  }
   filmstrip(a);
 }
 function step(delta) {
-  const a = active(performance.now()); playing = false;
+  const a = active(performance.now()); playing = false; useFrameInspection();
   if (a.state === 'look') { setMode('direction'); direction = (a.frame + delta + 16) % 16; }
   else if (a.state === 'neutral') { setMode('direction'); direction = 0; }
   else { setMode('state'); state = a.state; const n = STATES[state].durations.length, i = (a.frame + delta + n) % n; elapsed = STATES[state].durations.slice(0, i).reduce((x, y) => x + y, 0); }
@@ -214,18 +231,19 @@ canvas.addEventListener('keydown', e => {
 });
 window.addEventListener('blur', () => { if (mode === 'interactive') { cancelInteraction(); paint(); } });
 window.addEventListener('resize', positionPet);
+$('playback-rule').addEventListener('change', () => { playback = $('playback-rule').value; elapsed = 0; playing = true; paint(); });
 $('speed').addEventListener('change', () => { speed = Number($('speed').value); });
 $('background').addEventListener('change', () => { stage.dataset.background = $('background').value; });
 $('zoom').addEventListener('change', () => {
   cancelInteraction();
   const z = Number($('zoom').value);
   canvas.style.width = CELL.width * z + 'px'; canvas.style.height = CELL.height * z + 'px';
-  document.querySelector('.scale-note').textContent = z === 1 ? '192 × 208 · 实际宠物尺寸' : z + '× · ' + (z < 1 ? '缩小检查' : '放大检查');
+  document.querySelector('.scale-note').textContent = z === 1 ? '192 × 208 · 图格原始尺寸' : z + '× · ' + (z < 1 ? '缩小检查' : '放大检查');
   stage.style.height = Math.max(390, 208 * z + 64) + 'px'; positionPet(); paint();
 });
 image.onload = () => {
   if (image.naturalWidth !== 1536 || image.naturalHeight !== 2288) { $('asset-status').textContent = '图集尺寸错误：需要1536×2288'; return; }
-  ready = true; $('asset-status').textContent = '短直卡通腿修复版 · v2 · 9组动作 / 16方向' + (requested ? ' · 候选版本' : '');
+  ready = true; $('asset-status').textContent = '短直卡通腿 · v2 · 桌面规则核对 2026-10-15' + (requested ? ' · 候选版本' : '');
   paint();
 };
 image.onerror = () => { $('asset-status').textContent = '图集未能读取，请从仓库根目录启动本地HTTP服务。'; };

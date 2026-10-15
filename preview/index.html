@@ -5,12 +5,13 @@
 <header><div class="mark">s<span>p</span></div><div><p class="eyebrow">SILENT PET / MOTION LAB</p><h1>让每一个小动作都自然。</h1></div><a href="../README.md" class="doc">项目说明 ↗</a></header>
 <main>
 <section class="stage-card">
-  <div class="stage-top"><span id="mode-label">原生节奏检查</span><span class="pill" id="state-name">安静待机</span></div>
+  <div class="stage-top"><span id="mode-label">桌面播放规则模拟</span><span class="pill" id="state-name">安静待机</span></div>
   <div id="stage" class="stage checker" data-background="checker">
     <div class="baseline" aria-hidden="true"></div>
     <canvas id="pet" width="192" height="208" aria-label="宠物动作预览"></canvas>
-    <div class="scale-note">192 × 208 · 实际宠物尺寸</div>
+    <div class="scale-note">192 × 208 · 图格原始尺寸</div>
   </div>
+  <label class="playback-options">播放规则 <select id="playback-rule" aria-label="播放规则"><option value="native" selected>桌面规则：三轮动作后待机</option><option value="loop">逐帧循环：持续检查素材</option></select></label>
   <div class="transport"><button id="play" type="button" aria-pressed="true">暂停</button><button id="previous" type="button" aria-label="上一帧">←</button><button id="next" type="button" aria-label="下一帧">→</button><span id="frame-label">第 1 / 6 帧</span><label>速度 <select id="speed" aria-label="播放速度"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option></select></label></div>
   <div id="filmstrip" class="filmstrip" aria-label="逐帧检查"></div>
   <p id="hint" class="hint">点击下方缩略帧可暂停定位。基线用于检查脚底与角色大小。</p>
@@ -25,15 +26,15 @@
       <label class="motion-option"><input id="reduced-motion" type="checkbox">减少动态效果</label>
       <button id="reset-position" type="button">回到中间</button>
     </div>
-    <p class="hint native-note">检查模式按 Codex 原有节奏播放。互动体验的舒缓时长、靠近注视、点击与冷却仅在本预览生效；桌面端通过更克制的亲近姿态减轻急促感。</p>
+    <p class="hint native-note">桌面规则模拟按当前客户端的播放方式检查素材。互动体验中的靠近跟随、点击回应与冷却是浏览器设计原型，无法通过安装图集加入桌面宠物。</p>
   </section>
 
   <section class="panel"><p class="eyebrow">01 / STATES</p><h2>九种状态</h2><div id="states" class="button-grid"></div></section>
   <section class="panel"><p class="eyebrow">02 / GAZE</p><h2>十六个方向</h2><div class="direction-tools"><button id="neutral" type="button">默认姿势</button><button id="look-loop" type="button">顺时针巡看</button><button id="pointer" type="button" aria-pressed="false">跟随预览区指针</button></div><div id="directions" class="directions"></div><p class="hint">这里可手动触发全部方向，不代表桌面应用中的触发规则。</p></section>
   <section class="panel"><p class="eyebrow">03 / TRANSITIONS</p><h2>连续切换</h2><div id="sequences" class="sequences"></div><p class="hint">直接切换原始帧，不加淡入淡出，方便看出尺寸跳动。</p></section>
-  <section class="panel appearance"><label>背景 <select id="background" aria-label="背景"><option value="checker">透明网格</option><option value="light">浅色</option><option value="dark">深色</option></select></label><label>显示 <select id="zoom" aria-label="显示比例"><option value="0.5">0.5× 缩小检查</option><option value="1" selected>原始大小</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label></section>
+  <section class="panel appearance"><label>背景 <select id="background" aria-label="背景"><option value="checker">透明网格</option><option value="light">浅色</option><option value="dark">深色</option></select></label><label>显示 <select id="zoom" aria-label="显示比例"><option value="0.5">0.5× 缩小检查</option><option value="1" selected>图格原始大小</option><option value="1.5">1.5×</option><option value="2">2×</option></select></label></section>
 </aside>
 </main>
 <footer><span id="asset-status" role="status">正在读取图集…</span><span>仅在本地读取图片 · 无需账号或网络服务</span></footer>
-<script type="module" src="app.mjs"></script>
+<script type="module" src="app.mjs?v=audit-20261015"></script>
 </body></html>

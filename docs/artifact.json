@@ -30,7 +30,7 @@
   "rendering": "source/rig/rig.json",
   "unit_tests": {
     "command": "npm test",
-    "passed": 17,
+    "passed": 22,
     "failed": 0
   },
   "browser_test_runner": "tools/test_preview.cjs",
@@ -42,5 +42,7 @@
   "direction_semantics_scope": "Exact head/upper-body pixels preserved before cleanup with uniform8px translation; lower-body contours reviewed afresh.",
   "installation": "docs/qa/cartoon-installation.json",
   "published_preview": "docs/qa/cartoon-published-preview.json",
-  "repair_decisions": "docs/qa/cartoon-repair-decisions.json"
+  "repair_decisions": "docs/qa/cartoon-repair-decisions.json",
+  "latest_behavior_audit": "docs/user-review-2026-10-15.md",
+  "preview_validation": "docs/qa/audit-2026-10-15-checks.json"
 }

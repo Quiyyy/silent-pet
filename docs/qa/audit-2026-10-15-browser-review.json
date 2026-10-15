@@ -1,0 +1,469 @@
+{
+  "surface": "Codex in-app browser, owned localhost preview; not native desktop pet UI",
+  "checks": [
+    {
+      "label": "警觉待机",
+      "view": {
+        "frame": "0",
+        "kind": "inspection",
+        "mode": "state",
+        "phase": "",
+        "playback": "loop",
+        "reactionId": "0",
+        "reactionSource": "",
+        "requestedState": "idle",
+        "state": "idle"
+      }
+    },
+    {
+      "label": "向右移动",
+      "view": {
+        "frame": "2",
+        "kind": "inspection",
+        "mode": "state",
+        "phase": "",
+        "playback": "loop",
+        "reactionId": "0",
+        "reactionSource": "",
+        "requestedState": "running-right",
+        "state": "running-right"
+      }
+    },
+    {
+      "label": "向左移动",
+      "view": {
+        "frame": "2",
+        "kind": "inspection",
+        "mode": "state",
+        "phase": "",
+        "playback": "loop",
+        "reactionId": "0",
+        "reactionSource": "",
+        "requestedState": "running-left",
+        "state": "running-left"
+      }
+    },
+    {
+      "label": "招手",
+      "view": {
+        "frame": "1",
+        "kind": "inspection",
+        "mode": "state",
+        "phase": "",
+        "playback": "loop",
+        "reactionId": "0",
+        "reactionSource": "",
+        "requestedState": "waving",
+        "state": "waving"
+      }
+    },
+    {
+      "label": "亲近回应",
+      "view": {
+        "frame": "1",
+        "kind": "inspection",
+        "mode": "state",
+        "phase": "",
+        "playback": "loop",
+        "reactionId": "0",
+        "reactionSource": "",
+        "requestedState": "jumping",
+        "state": "jumping"
+      }
+    },
+    {
+      "label": "失落",
+      "view": {
+        "frame": "1",
+        "kind": "inspection",
+        "mode": "state",
+        "phase": "",
+        "playback": "loop",
+        "reactionId": "0",
+        "reactionSource": "",
+        "requestedState": "failed",
+        "state": "failed"
+      }
+    },
+    {
+      "label": "等待回应",
+      "view": {
+        "frame": "1",
+        "kind": "inspection",
+        "mode": "state",
+        "phase": "",
+        "playback": "loop",
+        "reactionId": "0",
+        "reactionSource": "",
+        "requestedState": "waiting",
+        "state": "waiting"
+      }
+    },
+    {
+      "label": "寻找线索",
+      "view": {
+        "frame": "2",
+        "kind": "inspection",
+        "mode": "state",
+        "phase": "",
+        "playback": "loop",
+        "reactionId": "0",
+        "reactionSource": "",
+        "requestedState": "running",
+        "state": "running"
+      }
+    },
+    {
+      "label": "完成检查",
+      "view": {
+        "frame": "1",
+        "kind": "inspection",
+        "mode": "state",
+        "phase": "",
+        "playback": "loop",
+        "reactionId": "0",
+        "reactionSource": "",
+        "requestedState": "review",
+        "state": "review"
+      }
+    },
+    {
+      "label": "0°",
+      "view": {
+        "frame": "0",
+        "kind": "inspection",
+        "mode": "direction",
+        "phase": "",
+        "playback": "loop",
+        "reactionId": "0",
+        "reactionSource": "",
+        "requestedState": "look",
+        "state": "look"
+      }
+    },
+    {
+      "label": "22.5°",
+      "view": {
+        "frame": "1",
+        "kind": "inspection",
+        "mode": "direction",
+        "phase": "",
+        "playback": "loop",
+        "reactionId": "0",
+        "reactionSource": "",
+        "requestedState": "look",
+        "state": "look"
+      }
+    },
+    {
+      "label": "45°",
+      "view": {
+        "frame": "2",
+        "kind": "inspection",
+        "mode": "direction",
+        "phase": "",
+        "playback": "loop",
+        "reactionId": "0",
+        "reactionSource": "",
+        "requestedState": "look",
+        "state": "look"
+      }
+    },
+    {
+      "label": "67.5°",
+      "view": {
+        "frame": "3",
+        "kind": "inspection",
+        "mode": "direction",
+        "phase": "",
+        "playback": "loop",
+        "reactionId": "0",
+        "reactionSource": "",
+        "requestedState": "look",
+        "state": "look"
+      }
+    },
+    {
+      "label": "90°",
+      "view": {
+        "frame": "4",
+        "kind": "inspection",
+        "mode": "direction",
+        "phase": "",
+        "playback": "loop",
+        "reactionId": "0",
+        "reactionSource": "",
+        "requestedState": "look",
+        "state": "look"
+      }
+    },
+    {
+      "label": "112.5°",
+      "view": {
+        "frame": "5",
+        "kind": "inspection",
+        "mode": "direction",
+        "phase": "",
+        "playback": "loop",
+        "reactionId": "0",
+        "reactionSource": "",
+        "requestedState": "look",
+        "state": "look"
+      }
+    },
+    {
+      "label": "135°",
+      "view": {
+        "frame": "6",
+        "kind": "inspection",
+        "mode": "direction",
+        "phase": "",
+        "playback": "loop",
+        "reactionId": "0",
+        "reactionSource": "",
+        "requestedState": "look",
+        "state": "look"
+      }
+    },
+    {
+      "label": "157.5°",
+      "view": {
+        "frame": "7",
+        "kind": "inspection",
+        "mode": "direction",
+        "phase": "",
+        "playback": "loop",
+        "reactionId": "0",
+        "reactionSource": "",
+        "requestedState": "look",
+        "state": "look"
+      }
+    },
+    {
+      "label": "180°",
+      "view": {
+        "frame": "8",
+        "kind": "inspection",
+        "mode": "direction",
+        "phase": "",
+        "playback": "loop",
+        "reactionId": "0",
+        "reactionSource": "",
+        "requestedState": "look",
+        "state": "look"
+      }
+    },
+    {
+      "label": "202.5°",
+      "view": {
+        "frame": "9",
+        "kind": "inspection",
+        "mode": "direction",
+        "phase": "",
+        "playback": "loop",
+        "reactionId": "0",
+        "reactionSource": "",
+        "requestedState": "look",
+        "state": "look"
+      }
+    },
+    {
+      "label": "225°",
+      "view": {
+        "frame": "10",
+        "kind": "inspection",
+        "mode": "direction",
+        "phase": "",
+        "playback": "loop",
+        "reactionId": "0",
+        "reactionSource": "",
+        "requestedState": "look",
+        "state": "look"
+      }
+    },
+    {
+      "label": "247.5°",
+      "view": {
+        "frame": "11",
+        "kind": "inspection",
+        "mode": "direction",
+        "phase": "",
+        "playback": "loop",
+        "reactionId": "0",
+        "reactionSource": "",
+        "requestedState": "look",
+        "state": "look"
+      }
+    },
+    {
+      "label": "270°",
+      "view": {
+        "frame": "12",
+        "kind": "inspection",
+        "mode": "direction",
+        "phase": "",
+        "playback": "loop",
+        "reactionId": "0",
+        "reactionSource": "",
+        "requestedState": "look",
+        "state": "look"
+      }
+    },
+    {
+      "label": "292.5°",
+      "view": {
+        "frame": "13",
+        "kind": "inspection",
+        "mode": "direction",
+        "phase": "",
+        "playback": "loop",
+        "reactionId": "0",
+        "reactionSource": "",
+        "requestedState": "look",
+        "state": "look"
+      }
+    },
+    {
+      "label": "315°",
+      "view": {
+        "frame": "14",
+        "kind": "inspection",
+        "mode": "direction",
+        "phase": "",
+        "playback": "loop",
+        "reactionId": "0",
+        "reactionSource": "",
+        "requestedState": "look",
+        "state": "look"
+      }
+    },
+    {
+      "label": "337.5°",
+      "view": {
+        "frame": "15",
+        "kind": "inspection",
+        "mode": "direction",
+        "phase": "",
+        "playback": "loop",
+        "reactionId": "0",
+        "reactionSource": "",
+        "requestedState": "look",
+        "state": "look"
+      }
+    },
+    {
+      "label": "native affection returns after three rounds",
+      "view": {
+        "frame": "0",
+        "kind": "inspection",
+        "mode": "state",
+        "phase": "idle-return",
+        "playback": "native",
+        "reactionId": "0",
+        "reactionSource": "",
+        "requestedState": "jumping",
+        "state": "idle"
+      }
+    },
+    {
+      "label": "rapid clicks do not restart",
+      "view": {
+        "frame": "0",
+        "kind": "gaze",
+        "mode": "interactive",
+        "phase": "",
+        "playback": "prototype",
+        "reactionId": "1",
+        "reactionSource": "click",
+        "requestedState": "neutral",
+        "state": "neutral"
+      }
+    },
+    {
+      "label": "prototype task priority",
+      "view": {
+        "frame": "2",
+        "kind": "task",
+        "mode": "interactive",
+        "phase": "",
+        "playback": "prototype",
+        "reactionId": "1",
+        "reactionSource": "click",
+        "requestedState": "waiting",
+        "state": "waiting"
+      }
+    },
+    {
+      "label": "reduced motion",
+      "view": {
+        "frame": "0",
+        "kind": "task",
+        "mode": "interactive",
+        "phase": "",
+        "playback": "prototype",
+        "reactionId": "1",
+        "reactionSource": "click",
+        "requestedState": "running",
+        "state": "running"
+      }
+    },
+    {
+      "label": "native idle first frame duration",
+      "observedMs": 1799,
+      "view": {
+        "frame": "1",
+        "kind": "inspection",
+        "mode": "state",
+        "phase": "idle",
+        "playback": "native",
+        "reactionId": "0",
+        "reactionSource": "",
+        "requestedState": "idle",
+        "state": "idle"
+      }
+    },
+    {
+      "label": "manual stepping switches to frame inspection",
+      "view": {
+        "frame": "2",
+        "kind": "inspection",
+        "mode": "state",
+        "phase": "",
+        "playback": "loop",
+        "reactionId": "0",
+        "reactionSource": "",
+        "requestedState": "idle",
+        "state": "idle"
+      }
+    },
+    {
+      "label": "keyboard activation",
+      "view": {
+        "frame": "0",
+        "kind": "affection",
+        "mode": "interactive",
+        "phase": "",
+        "playback": "prototype",
+        "reactionId": "1",
+        "reactionSource": "keyboard",
+        "requestedState": "jumping",
+        "state": "jumping"
+      }
+    },
+    {
+      "label": "keyboard cancel",
+      "view": {
+        "frame": "0",
+        "kind": "idle",
+        "mode": "interactive",
+        "phase": "",
+        "playback": "prototype",
+        "reactionId": "1",
+        "reactionSource": "keyboard",
+        "requestedState": "idle",
+        "state": "idle"
+      }
+    }
+  ],
+  "consoleWarningsAndErrors": []
+}

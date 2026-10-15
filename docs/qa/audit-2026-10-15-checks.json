@@ -1,0 +1,30 @@
+{
+  "review_date": "2026-10-15",
+  "unit_tests": {
+    "passed": 22,
+    "failed": 0,
+    "command": "npm test"
+  },
+  "browser": "Actual UI checks in the Codex in-app browser against the owned localhost preview",
+  "browser_checks": [
+    "nine state selectors",
+    "sixteen direction selectors",
+    "desktop waiting action returns to idle while retaining requested task",
+    "desktop affection returns after three rounds",
+    "raw-loop vs desktop profile selector",
+    "slow idle first frame observed about1799ms including automation overhead; configured1680ms",
+    "manual stepping switches to frame inspection",
+    "rapid clicks keep reactionId1",
+    "task priority",
+    "reduced-motion first frame",
+    "keyboard activation and cancel",
+    "small-size/dark-background inspection"
+  ],
+  "console_errors_or_warnings": [],
+  "native_desktop_ui_tested": false,
+  "atlas_sha256": "e9135f701500d2679322f8490999d5e4063b830db9ae63a8d771756d0b3ed9fe",
+  "installed_sha256": "e9135f701500d2679322f8490999d5e4063b830db9ae63a8d771756d0b3ed9fe",
+  "atlas_modified": false,
+  "native_implementation_inspected_read_only": true,
+  "host_app_modified": false
+}

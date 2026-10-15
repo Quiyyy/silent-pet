@@ -1,0 +1,99 @@
+{
+  "review_date": "2026-10-15",
+  "runtime_version": "26.1002.52244",
+  "runtime_build": "13536",
+  "windows_package_version": "26.1002.7124.0",
+  "update_check": {
+    "status": "unavailable",
+    "reason": "disabled for build flavor (prod)",
+    "latest_version_confirmed": false
+  },
+  "comparison_version": "26.915.4065.0",
+  "desktop_format": {
+    "supported_versions": [
+      1,
+      2
+    ],
+    "v2_dimensions": [
+      1536,
+      2288
+    ],
+    "states": 9,
+    "look_directions": 16,
+    "manifest_fields": [
+      "id",
+      "displayName",
+      "description",
+      "spriteVersionNumber",
+      "spritesheetPath"
+    ],
+    "custom_event_callbacks_or_durations_exposed": false
+  },
+  "animation_policy": {
+    "idle_frame_multiplier": 6,
+    "idle_cycle_ms": 6600,
+    "non_idle_repeats": 3,
+    "then": "slow idle",
+    "hover_slot": "jumping",
+    "hover_first_batch_ms": 2520,
+    "wave_first_batch_ms": 2100,
+    "same_policy_present_in_26_915": true,
+    "new_internal_loop_override": "Present in current renderer; not passed by native mascot wrapper and not a pet.json field."
+  },
+  "gaze": {
+    "v2_direction_rendering": true,
+    "sources": [
+      "active Quick Chat text caret",
+      "notification follow-up text caret",
+      "Computer Use cursor event"
+    ],
+    "generic_nearby_human_mouse_follow_confirmed": false,
+    "sources_already_present_in_26_915": true,
+    "look_allowed_mascot_states": [
+      "idle",
+      "running",
+      "waving"
+    ],
+    "hover_and_drag_override_gaze": true
+  },
+  "click": {
+    "host_action": true,
+    "custom_pet_affection_callback_exposed": false,
+    "note": "Mascot pointer-up invokes host action. Hover uses jumping independently; click is not a new configurable affection animation slot."
+  },
+  "settings_documented": [
+    "pet selection",
+    "pet size and reset",
+    "floating Quick Chat controls",
+    "activity tray",
+    "OS reduced motion"
+  ],
+  "public_change_evidence": {
+    "latest_found_pet_specific_changelog_entry": "2026-09-11",
+    "post_2026_09_20_custom_interaction_api_announcement_found": false
+  },
+  "sources": [
+    "https://learn.chatgpt.com/docs/pets?surface=app",
+    "https://learn.chatgpt.com/docs/changelog#codex-2026-09-11-app",
+    "https://learn.chatgpt.com/docs/notifications#follow-chat-activity-with-a-pet"
+  ],
+  "local_evidence": [
+    {
+      "file": "app-initial-25361a10f2bf.js",
+      "sha256": "bddf0e4e79918f7157682015c598b97eb833553c036026004555f88fa0cb9d3b"
+    },
+    {
+      "file": "avatar-mascot-button-a626ddede376.js",
+      "sha256": "1a69752c18b48771390dce47c4d0c1c036af11c983a1a3b4d2059af76a566642"
+    },
+    {
+      "file": "avatar-overlay-native-page-2de8ca8bb031.js",
+      "sha256": "0cfcc8b3294bc924faec0a22f751c462a6209f55981c97a5f213cde14f2295e0"
+    },
+    {
+      "file": "bootstrap-Dz9A8y86.js",
+      "sha256": "cc846e0c09605416a389c27b0227d3853f04037fc88539b51fae8b8ee5353e87"
+    }
+  ],
+  "limits": "Static local implementation inspection plus browser preview verification. No native desktop pet UI interaction performed."
+}
